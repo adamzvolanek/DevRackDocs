@@ -2,7 +2,7 @@
 title: Installing WikiJS
 description: 
 published: true
-date: 2023-04-20T03:00:04.807Z
+date: 2023-04-20T03:05:47.859Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-20T02:08:06.913Z
@@ -31,3 +31,9 @@ You can view the docker-compose file on Git [here](https://adamzvolanek.github.i
   - Generated using these [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) 
 - Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the GitHub portion.
 
+## Tips
+
+Open the dockers terminal and navigate to `/wiki/data/repo` to locate default location for Git installation.
+
+1. To open terminal in Docker Desktop, select the respective container and click on its name.
+2. Click on the 'Terminal' tab, it should look like this: ![image.png](/image.png){.align-center}
