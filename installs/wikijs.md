@@ -2,13 +2,13 @@
 title: Installing WikiJS
 description: 
 published: true
-date: 2023-04-20T03:26:35.762Z
+date: 2023-04-20T03:26:39.844Z
 tags: 
 editor: markdown
 dateCreated: 2023-04-20T03:18:38.917Z
 ---
 
-# Installing WikiJS
+# WikiJS
 
 ## Prerequisite
 
