@@ -10,11 +10,13 @@ dateCreated: 2023-04-20T03:18:38.917Z
 
 # WikiJS
 
+While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender and I may switch to in time.
+
 ## Prerequisite
 
 This WikiJS instance is deployed using [Docker Desktop](https://www.docker.com/products/docker-desktop/) on my Windows PC. Remember to enable virtulization in your computers BIOS.
 
-## Docker-Compose 
+## Docker-Compose
 
 You can view the docker-compose file on Git [here](https://adamzvolanek.github.io/alexandria_splash_page/)
 
