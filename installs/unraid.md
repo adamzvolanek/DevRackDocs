@@ -34,6 +34,10 @@ Select your primary hard-drive as Disk 1 and start the array at the bottom of th
 
 Install the community apps button by selecting 'Plugin' and . Refresh the page and select the newly created 'Apps' button. Click 'I Understand' on the Disclaimer and Plugins (appears after) window.
 
+In the Unraid settings --> Disk Settings change 'Enable auto start' to Yes.
+
+*If using an ssd in the array*, install 'Dynamix SSD Trim'. Have SSD Trim scheduled for daily.
+
 ### Installing Docker Compose
 
 Install docker-compose by going into Apps and searching 'docker compose'. Once installed, return to the docker tab and view the compose tab at the bottom of the page. You can add a new stack and test from here.
