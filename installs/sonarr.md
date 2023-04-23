@@ -1,6 +1,6 @@
-# Radarr
+# Sonarr
 
-This page covers the setup of my development version of radarr to deploy my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
+This page covers the setup of my development version of sonarr to deploy my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
 **TO COMPLETE LATER** Will need to adjust and reform mounts/media library to follow the structure outlined [here](https://trash-guides.info/Hardlinks/How-to-setup-for/Docker/). This will occur during ZFS transition.
 
@@ -39,7 +39,7 @@ Select 'Deluge' and name the Download Client. Fill in the remaining fields as fo
 - Host: Enter `delugevpn` (this is the same as the container_name in `delugevpn.yaml`)
 - Port: 8112 (leave as default)
 - Password: (change from default)
-- Category: `radarr` (leave as default)
+- Category: `sonarr` (leave as default)
 - Recent Priority: 'Last' (leave as default)
 - Older Priority: 'Last' (leave as default)
 - Add Paused: Remain unchecked (leave as default)
@@ -59,13 +59,7 @@ Select 'Emby / Jellyfin' and name the Connection. Fill in the fields as follows:
 
 ### Settings --> Metadata
 
-An option to explore, to share meta-data between the *arr family of dockers and JellyFin. Select 'Kodi (XBMC) / Emby Metadata':
-
-- Check 'Enable metadata file creation for this metadata type'
-- Check Movie Metadata
-- Leave 'English' as the Metadata Language
-- Check Movie Images
-- Uncheck 'Radarr will write metadata to movie.nfo...
+An option to explore, to share meta-data between the *arr family of dockers and JellyFin. Select 'Kodi (XBMC) / Emby Metadata' and check all the boxes.
 
 ### Settings --> UI
 
@@ -77,4 +71,4 @@ Select the 'Start Import' button, select the 'movies' directory, and press Okay.
 
 ## Automated
 
-Configuration file to be generated from 'blank' radarr install and imported during compose or a part of local stack directory.
+Configuration file to be generated from 'blank' sonarr install and imported during compose or a part of local stack directory.
