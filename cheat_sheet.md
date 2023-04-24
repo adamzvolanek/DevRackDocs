@@ -9,3 +9,8 @@
 - Stop all running containers: `docker-compose stop`
 - Stop and remove all containers, networks, images, and volumes: `docker-compose down --rmi all --volumes`
 - Follow logs for all containers: `docker-compose logs --follow`
+
+## Git
+
+- Global Git config lives in: `C:/Users/<username>/.gitconfig`
+- Change git gpg.program to use above location: `git config --global gpg.program "C:/Users/<username>/.gitconfig"`
