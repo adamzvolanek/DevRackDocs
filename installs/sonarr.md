@@ -1,6 +1,8 @@
 # Sonarr
 
-This page covers the setup of my development version of sonarr to deploy my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
+This page covers the setup of sonarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
+
+This document supports Sonarr version 3.
 
 **TO COMPLETE LATER** Will need to adjust and reform mounts/media library to follow the structure outlined [here](https://trash-guides.info/Hardlinks/How-to-setup-for/Docker/). This will occur during ZFS transition.
 
@@ -23,14 +25,26 @@ Modify 'Any' by renaming it to 'Any(Czech)' and change the Language to Czech. Al
 
 Modify 'HD-720p/1080p' by renaming it to 'Any'.
 
-### Settings --> Custom Formats
+Under Release Profiles, create a new profile named 'HEVC'. Check 'Enable Profile' and in 'Preferred' enter `x265` wiht a score of 10 and `x264` with a score 5.
 
-Select the plus symbol and name it 'HEVC'. Select the plus symbol for conditions and enter the following information.
+### Settings --> Indexers
 
-- Name: `x265`
-- Regular Expression: `(((x|h)\.?265)|(HEVC))`
-- Leave Negate unchecked. 'If checked, the custom format will not apply...'
-- Check Required. 'This Release Title condition must match for the...'
+Under Indexers, add a new indexer named 'Torznab'. The instructions below will apply to all indexers added as part of the [jackett](jackett.md) instructions.
+
+- Name the indexer to match the indexer URL in Jackett,
+- Check 'Enable RSS'
+- Check 'Enable Automatic Search'
+- Check 'Enable Interactive Search'
+- Add the 'Torznab Feed' (from Jackett) to the URL. Traditional structure of URL: `http://<SERVER_IP>:<JACKET_PORT>/api/v2.0/indexers/<INDEXER_NAME>/results/torznab/`
+- Leave the API path as `/api`
+- Add Jackett's API Key (found at the top right of Jackett's home screen)
+- Select the appropriate categoriey `TV (5000)`
+- Select appropriate anime categories: `TV/Anime (5070)`, `Raw animes (134634)`, and `Anime (140679)`
+- Minimum Seeders: 5
+- Select an appropriate seed ratio. *This over-writes the download clients default*
+- Select an appropriate seed time. *This over-writes the download clients default*
+
+Repeat these steps for each Indexer.
 
 ### Settings --> Download Clients
 
@@ -49,7 +63,7 @@ Select 'Deluge' and name the Download Client. Fill in the remaining fields as fo
 
 **Prerequisite**: Requires API Key from Jellyfin.
 
-Select 'Emby / Jellyfin' and name the Connection. Fill in the fields as follows:
+Select 'Emby' and name the Connection. Fill in the fields as follows:
 
 - Check 'On Health Issue' and check the subsequent 'Include Health Warnings'
 - Host: Enter `jellyfin` (this is the same as the container_name in `jellyfin.yaml`)
@@ -65,9 +79,9 @@ An option to explore, to share meta-data between the *arr family of dockers and 
 
 Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
-### Movies --> Library Import
+### Series --> Library Import
 
-Select the 'Start Import' button, select the 'movies' directory, and press Okay. Allow time for the movies to be imported and managed.
+Select the 'Start Import' button, select the 'TV_Show' directory, and press Ok. Allow time for the tv shows to be imported and managed.
 
 ## Automated
 

@@ -1,6 +1,6 @@
 # Radarr
 
-This page covers the setup of my development version of radarr to deploy my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
+This page covers the setup of radarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
 **TO COMPLETE LATER** Will need to adjust and reform mounts/media library to follow the structure outlined [here](https://trash-guides.info/Hardlinks/How-to-setup-for/Docker/). This will occur during ZFS transition.
 
