@@ -1,6 +1,6 @@
 # Tools
 
-This page covers the setup of tools used on the Alexandria server.
+This page covers the setup of tools & plugins used on the Alexandria server.
 
 # Plugins
 
@@ -108,10 +108,6 @@ All remaning settings are seupt as 'Yes'.
 
 No setup required.
 
-## Dynamix WireGuard
-
-Pending.
-
 ## File Activity
 
 Enable for troubleshooting if needed.
@@ -134,7 +130,26 @@ Pending
 
 ## Unassigned Devices / Plus (Addon) / Preclear
 
-Pending
+Common Settings:
+
+- Destructive Mode: Enabled
+- Auto Mount USB Devices: Yes
+- Mount SSDs with 'discord' option? Yes
+- Legacy Mount Point Compatability? No
+- Specify SMB Version when Mounting Remote Shares? No
+- NFS Version to use when Mounting Remote Shares: NFSv4
+- Debug Log Level: None
+
+SMB Settings:
+
+- SMB Sharing: Disabled
+- Case-sensitive names: Auto
+- Add 'force user = nobody' to SMB share config: No
+
+NFS Settings:
+
+- Enable NFS export? No
+- NFS Security: Public
 
 ## unBalance
 
@@ -142,4 +157,41 @@ Enable unBALANCE Server: Yes
 
 ## User Scripts
 
-No setup require.
+### `delete_dangling_images`
+
+Script deletes any 'dangling' images within your docker.img file.
+
+- Scheduled Monthly
+
+```bash
+#!/bin/bash
+
+docker rmi $(docker images --quiet --filter "dangling=true")
+
+echo Finished
+echo if an error shows above, no dangling images were found to delete
+```
+
+### `delete.ds_store`
+
+Deletes all .DS_Store files on array created by Apple's Finder.
+
+- Scheduled Monthly
+
+```bash
+#!/bin/bash
+echo "Searching for (and deleting) .DS_Store Files"
+echo "This may take a awhile"
+find /mnt/user -maxdepth 9999 -noleaf -type f -name ".DS_Store" -exec rm "{}" \;
+```
+
+### `Network Routing`
+
+Runs on boot to change default route.
+
+Script location: `/boot/config/plugins/user.scripts/scripts/Networking`
+
+```bash
+#!/bin/bash
+ip route add default via 192.168.1.1 dev br0
+```
