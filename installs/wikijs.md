@@ -1,13 +1,3 @@
----
-title: Installing WikiJS
-description: 
-published: true
-date: 2023-04-20T03:26:41.695Z
-tags: 
-editor: markdown
-dateCreated: 2023-04-20T03:18:38.917Z
----
-
 # WikiJS
 
 While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender and I may switch to in time.

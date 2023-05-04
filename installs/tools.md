@@ -1,10 +1,10 @@
 # Tools
 
-This page covers the setup of tools & plugins used on the Alexandria server.
+This page covers the setup of tools & plugins used on the Alexandria (Unraid) server.
 
-# Plugins
+## Plugins
 
-## Appdata Backup/Restore v2.5
+### Appdata Backup/Restore v2.5
 
 Setup the Appdata Backup/Restore Plugin as follows.
 
@@ -29,7 +29,7 @@ USB Backup Settings
 - Hour: 1
 - Minute: 0
 
-## Dynamix File Integrity
+### Dynamix File Integrity
 
 - Placement of file integrity control: Header menu
 - Automatically protect new and modified files: Enabled
@@ -46,11 +46,11 @@ USB Backup Settings
 - Send notifications: Yes
 - Error Logging: Syslog & Output file
 
-## Appdata Cleanup
+### Appdata Cleanup
 
 No setup requried.
 
-## Community Applications
+### Community Applications
 
 - Hide Deprecated Applications: Yes
 - Hide Incompatible Applications: Yes
@@ -61,13 +61,13 @@ No setup requried.
 - Save CA debugging information: No
 - Enable developer mode: Yes
 
-## Docker Compose Manager
+### Docker Compose Manager
 
 - Compose Command Porgress Display: Terminal
 - Debug Logging: Disabled
 - Patch unRAID WebUI: No
 
-## Nvidia-Driver
+### Nvidia-Driver
 
 The runtime settings:
 
@@ -78,7 +78,7 @@ The runtime settings:
 
 All remaning settings are seupt as 'Yes'.
 
-## Recycle Bin
+### Recycle Bin
 
 - Enable Recycle Bin? Yes
 - Update Recycle Bin Size in Background? Yes
@@ -90,7 +90,7 @@ All remaning settings are seupt as 'Yes'.
 - Remove Aged Files Notification? Yes
 - Log Deleted Files? Yes
 
-## Dynamix System Stats
+### Dynamix System Stats
 
 - Placement of Stats menu: Header menu
 - Opening page: System Stats
@@ -104,31 +104,31 @@ All remaning settings are seupt as 'Yes'.
 - Initial graphing mode: Real-time
 - Initial real-time sliding window: 1 hour
 
-## Dynamix System Info
+### Dynamix System Info
 
 No setup required.
 
-## File Activity
+### File Activity
 
 Enable for troubleshooting if needed.
 
-## Network/GPU Stats
+### Network/GPU Stats
 
 No setup requried.
 
-## rclone
+### rclone
 
 No setup requried. Installed as support for dockers.
 
-## Theme Engine
+### Theme Engine
 
 Truly preference in terms of setup.
 
-## Tips and Tweaks
+### Tips and Tweaks
 
 Pending
 
-## Unassigned Devices / Plus (Addon) / Preclear
+### Unassigned Devices / Plus (Addon) / Preclear
 
 Common Settings:
 
@@ -151,13 +151,13 @@ NFS Settings:
 - Enable NFS export? No
 - NFS Security: Public
 
-## unBalance
+### unBalance
 
 Enable unBALANCE Server: Yes
 
-## User Scripts
+### User Scripts
 
-### `delete_dangling_images`
+#### `delete_dangling_images`
 
 Script deletes any 'dangling' images within your docker.img file.
 
@@ -172,7 +172,7 @@ echo Finished
 echo if an error shows above, no dangling images were found to delete
 ```
 
-### `delete.ds_store`
+#### `delete.ds_store`
 
 Deletes all .DS_Store files on array created by Apple's Finder.
 
@@ -185,7 +185,7 @@ echo "This may take a awhile"
 find /mnt/user -maxdepth 9999 -noleaf -type f -name ".DS_Store" -exec rm "{}" \;
 ```
 
-### `Network Routing`
+#### `Network Routing`
 
 Runs on boot to change default route.
 
