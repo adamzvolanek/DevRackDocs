@@ -19,9 +19,10 @@ You can view the docker-compose file on Git [here](https://adamzvolanek.github.i
 
 ### Git Storage Configuration
 
-- Setup/Verify GitHub profile includes SSH Key
-  - Generated using these [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) 
-- Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the GitHub portion.
+- Setup/Verify GitHub profile includes SSH Key (Deploy Key)
+  - Generated using these [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+    - Be sure to name the deploy key to something recognizable to the application.
+- Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the "Configure Wiki.js".
 
 ## Tips
 
