@@ -1,7 +1,5 @@
 # Welcome
 
-Click the links in the menu to look around.
+Looks like you've found my wiki! To navigate, treat the left side like a file-system tree.
 
-## Notes
-
-This website is a collection of my homelab and documentation.
+On the left side you will find an [about me](./adamzvolanek.md), [install docs](./installs.md), and [backup procedures](./backups.md).
