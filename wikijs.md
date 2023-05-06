@@ -17,12 +17,31 @@ You can view the docker-compose file on Git [here](https://adamzvolanek.github.i
 - Generate strong password for adminstrator
 - Enter desired domain (this can be changed later)
 
+### Email Configuration
+
+- Under System -> Mail, enter the Sender name and Sender Email fields
+- Configure your 'SMTP Settings' as needed. Use a app-seicific password.
+
 ### Git Storage Configuration
 
 - Setup/Verify GitHub profile includes SSH Key (Deploy Key)
   - Generated using these [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
     - Be sure to name the deploy key to something recognizable to the application.
 - Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the "Configure Wiki.js".
+
+### File Structure and Navigation
+
+The repository is setup as a flat file repository to allow for WikiJS to best (in my opinion) display the information.
+
+#### Navigation Setup
+
+- Select Navigation
+- Select 'Static Navigation'
+  - Begin to add in dividers and 'Link's to the structure naming, modifying the icon, and typing their 'Target Type' to a Page.
+
+### Search Engine
+
+Modify to use 'Databse - PostgreSQL'.
 
 ## Tips
 
