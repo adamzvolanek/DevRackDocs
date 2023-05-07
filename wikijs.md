@@ -24,6 +24,20 @@ You can view the docker-compose file on Git [here](https://adamzvolanek.github.i
     - Be sure to name the deploy key to something recognizable to the application.
 - Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the "Configure Wiki.js".
 
+### File Structure and Navigation
+
+The repository is setup as a flat file repository to allow for WikiJS to best (in my opinion) display the information.
+
+#### Navigation Setup
+
+- Select Navigation
+- Select 'Custom Navigation'
+  - Begin to add in dividers and 'Link's to the structure naming, modifying the icon, and typing their 'Target Type' to a Page.
+
+### Search Engine
+
+Modify to use 'Databse - PostgreSQL'.
+
 ## Tips
 
 Open the dockers terminal and navigate to `/wiki/data/repo` to locate default location for Git installation.
