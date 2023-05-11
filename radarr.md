@@ -2,8 +2,6 @@
 
 This page covers the setup of radarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
-**TO COMPLETE LATER** Will need to adjust and reform mounts/media library to follow the structure outlined [here](https://trash-guides.info/Hardlinks/How-to-setup-for/Docker/). This will occur during ZFS transition.
-
 ## Manual Steps
 
 Follow these steps if a config file is not provided.
@@ -73,7 +71,7 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
 ### Movies --> Library Import
 
-Select the 'Start Import' button, select the 'movies' directory, and press Okay. Allow time for the movies to be imported and managed.
+Select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.
 
 ## Automated
 

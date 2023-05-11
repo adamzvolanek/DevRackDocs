@@ -4,8 +4,6 @@ This page covers the setup of sonarr to deploy in my docker-compose stack(s). Li
 
 This document supports Sonarr version 3.
 
-**TO COMPLETE LATER** Will need to adjust and reform mounts/media library to follow the structure outlined [here](https://trash-guides.info/Hardlinks/How-to-setup-for/Docker/). This will occur during ZFS transition.
-
 ## Manual Steps
 
 Follow these steps if a config file is not provided.
@@ -81,7 +79,7 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
 ### Series --> Library Import
 
-Select the 'Start Import' button, select the 'TV_Show' directory, and press Ok. Allow time for the tv shows to be imported and managed.
+Select the 'Start Import' button, select the `medua\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
 
 ## Automated
 
