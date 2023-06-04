@@ -1,6 +1,6 @@
 # WikiJS
 
-While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender and I may switch to in time.
+While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender, I am using WikiJS going forward due to GitHub integration.
 
 ## Prerequisite
 
