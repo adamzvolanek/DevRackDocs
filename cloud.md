@@ -41,6 +41,12 @@ There are additional items to configure *on* NextCloud itself, part of admin man
 
 No setup is needed for Redis in conjunciton with the cloud docker-compose stack.
 
+## Updating nextcloud
+
+To update Nextcloud, open the docker terminal either using Unraid's console feature, or when in Unraid typing, `docker exec -it nextcloud bash`. To begin the console update process, type, `updater.phar` and follow the prompts.
+
+The backup process takes time, allow it to complete.
+
 ## Automatic Setup
 
 Testing has not been completed, however the `cloud-dev.yaml` docker-compose stack is the best method of setting up the cloud stack in an automated fashion.
