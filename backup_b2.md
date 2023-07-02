@@ -36,18 +36,19 @@ During testing, the following script was created to rclone to a temporary bucket
 #!/bin/bash
 echo "Running RClone Sync of {shareName} Share to B2 {shareName} Bucket"
 rclone sync \
-  --checksum \
   --fast-list \
   --progress \
   --stats-one-line-date \
   --transfers 8 \
   --verbose \
-  --log-file {logLocation} \
+  --exclude /mnt/user/{shareName}/.Recycle.Bin/** \
+  - links \
+  --log-file {logLocation}/{shareName}_log.txt \
     /mnt/user/{shareName}/ \
     b2_buckets:{bucketName}
 
 echo "Updating permissions of log file"
-chmod 755 {logLocation}/{shareName}_logs.txt
+chmod 755 {logLocation}/{shareName}_log.txt
 ```
 
 Create a script for each share's backup following the script nomenclature, `function-shareName-destination-bucketName`. This results in a script name like, `backup-b2-{bucketName}'.
