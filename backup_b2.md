@@ -62,5 +62,4 @@ Add a description to the script putting in words what the script is doing.
 
 Repeat the creation of scripts for each Unraid share.
 
-Setup scripts cadence to run to your desired liking.
-
+Setup scripts cadence to run to your desired liking. Currently personal shares are running daily with others running weekly. One share includes a custom cron job to run daily to align with other backup processes.

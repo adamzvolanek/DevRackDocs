@@ -34,7 +34,7 @@ USB Backup Settings
 - Placement of file integrity control: Header menu
 - Automatically protect new and modified files: Enabled
 - Hashing method: MD5
-- Save new hashing results to fhash: Disabled
+- Save new hashing results to flash: Disabled
 - Excluded folders and files: Scratch
   - Custom folders: `/mnt/disk2/system/libvirt/libvirt.img, /mnt/user/Movies, /mnt/user/TV_Shows`
   - Custom files: `.Recycle.Bin,*.nfo,*.log,*.xml`
@@ -48,7 +48,7 @@ USB Backup Settings
 
 ### Appdata Cleanup
 
-No setup requried.
+No setup required.
 
 ### Community Applications
 
@@ -63,7 +63,7 @@ No setup requried.
 
 ### Docker Compose Manager
 
-- Compose Command Porgress Display: Terminal
+- Compose Command Progress Display: Terminal
 - Debug Logging: Disabled
 - Patch unRAID WebUI: No
 
@@ -76,7 +76,7 @@ The runtime settings:
 - Temperature Format: Celcius
 - UI Automatic Refresh / Interval (Milliseconds): Yes, 1000
 
-All remaning settings are seupt as 'Yes'.
+All remaining settings are setup as 'Yes'.
 
 ### Recycle Bin
 
@@ -114,11 +114,11 @@ Enable for troubleshooting if needed.
 
 ### Network/GPU Stats
 
-No setup requried.
+No setup required.
 
 ### rclone
 
-No setup requried. Installed as support for dockers.
+Setup for B2, Google Drive, and Local pending instructions.
 
 ### Theme Engine
 
@@ -128,14 +128,14 @@ Truly preference in terms of setup.
 
 Pending
 
-### Unassigned Devices / Plus (Addon) / Preclear
+### Unassigned Devices / Plus (Add-on) / Preclear
 
 Common Settings:
 
 - Destructive Mode: Enabled
 - Auto Mount USB Devices: Yes
 - Mount SSDs with 'discord' option? Yes
-- Legacy Mount Point Compatability? No
+- Legacy Mount Point Compatibility? No
 - Specify SMB Version when Mounting Remote Shares? No
 - NFS Version to use when Mounting Remote Shares: NFSv4
 - Debug Log Level: None
