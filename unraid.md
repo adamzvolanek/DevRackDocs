@@ -2,7 +2,7 @@
 
 My server is based on Unraid and will transition to ZFS-based hard disks. Developement is done on a decade+ old laptop that runs Unraid purely for docker-compose develpoment.
 
-This page covers the setup of my development version of Unraid to deploy my docker-compose stack(s).
+This page covers the setup of my Unraid server.
 
 ## Prerequisite
 

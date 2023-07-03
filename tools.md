@@ -49,6 +49,10 @@ USB Backup Settings
 ### Dynamix Schedules
 
 - Verify you are comfortable with timing of fixed scheduled items.
+  - Hourly: 0:20 of the hour
+  - Daily: 3:30 am
+  - Weekly: 4:00 am on a Sunday
+  - Monthly: 4:30 am on the 1st of every month.
 
 ### Appdata Cleanup
 

@@ -2,14 +2,14 @@
 
 This page covers the backup procedure for my docker containers running on Unraid. This process acts as a last resort of restoration where all dockers are backed up at once and all restored at once.
 
-Appdata backups that are 15 days or older are deleted, an output log file is created in `/mnt/user/Backups/Unraid/CA_Backup/Appdata_Backup/` to verify run.
+Appdata backups that are 15 days or older are deleted, an output log file is created in `/mnt/user/backups/Unraid/CA_Backup/Appdata_Backup/` to verify run.
 
 ## Configuration
 
 Install the [CA Appdata Backup v2.5](https://forums.unraid.net/topic/132721-plugin-ca-appdata-backup-restore-v25/) on Unraid.
 
 - Appdata Share: `/mnt/user/appdata/`
-- Destination Share: `/mnt/user/Backups/Unraid/CA_Backup/Appdata_Backup`
+- Destination Share: `/mnt/user/backups/Unraid/CA_Backup/Appdata_Backup`
 - Excluded Folders: `/mnt/cache/appdata/.Recycle.Bin/,/mnt/cache/appdata/.Trash-99/,/mnt/cache/appdata/Downloads/,/mnt/cache/appdata/jellyfin/metadata,/mnt/cache/appdata/binhex-minecraftserver,/mnt/cache/Downloads,/mnt/cache/appdata/binhex-lidarr/MediaCover,/mnt/cache/appdata/Jellyfin/trancodes,/mnt/cache/appdata/Jellyfin/metadata,/mnt/cache/appdata/photoprism/cache/,/mnt/cache/appdata/photoprism_external/cache/`
 - Use Compression: No
 - Verify Backups? Yes
@@ -27,10 +27,10 @@ Install the [CA Appdata Backup v2.5](https://forums.unraid.net/topic/132721-plug
 - Scheduled Backup Frequency: `Daily`
 - Day of Week: Monday
 - Day of Month: 13
-- Hour: `3`
-- Minute: `15`
+- Hour: `2`
+- Minute: `45`
 
-Backups are placed daily to `Backups/Unraid/CA_Backup/Appdata_Backup`
+Backups are placed daily to `backups/Unraid/CA_Backup/Appdata_Backup`
 
 ## Restoring
 

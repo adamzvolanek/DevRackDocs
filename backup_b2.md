@@ -62,4 +62,15 @@ Add a description to the script putting in words what the script is doing.
 
 Repeat the creation of scripts for each Unraid share.
 
-Setup scripts cadence to run to your desired liking. Currently personal shares are running daily with others running weekly. One share includes a custom cron job to run daily to align with other backup processes.
+Setup scripts cadence to run to your desired liking. Currently personal shares are running daily with others running weekly. One share includes a custom cron job to run daily to align with other backup processes. The current setup of hourly, daily, weekly, and monthly cadence can be viewed in the [tools](./tools.md) file under 'Dynamix Scheduler'. At time of writing cadence is outlined as follows:
+
+- Hourly: 0:20 of the hour
+- Daily: 3:30 am
+- Weekly: 4:00 am on a Sunday
+- Monthly: 4:30 am on the 1st of every month.
+
+Backups for user shares, critical data, and designated backups are scheduled daily. Backups of other users is weekly. Recall Community Applications Appdata (v2.5) occurs at 02:45 am daily allowing backups to pickup changes there after.
+
+## Cloud Drive Sync
+
+Uses Bisync [docs](https://rclone.org/bisync/) and runs on a custom cron schedule of `*/15 * * * *`.
