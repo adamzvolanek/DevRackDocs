@@ -46,6 +46,10 @@ USB Backup Settings
 - Send notifications: Yes
 - Error Logging: Syslog & Output file
 
+### Dynamix Schedules
+
+- Verify you are comfortable with timing of fixed scheduled items.
+
 ### Appdata Cleanup
 
 No setup required.
