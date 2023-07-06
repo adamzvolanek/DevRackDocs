@@ -38,6 +38,10 @@ In the Unraid settings --> Disk Settings change 'Enable auto start' to Yes.
 
 *If using an ssd in the array*, install 'Dynamix SSD Trim'. Have SSD Trim scheduled for daily.
 
+### Setting up Docker network
+
+Open the Unraid terminal and type `docker network create {DOCKER_NETWORK}`. Replacing the brackets and contents of DOCKER_NETWORK with the docker network name desired. The variable `${DOCKER_NETWORK}` is also referenced as part of the docker-compose configuration found [here](https://github.com/adamzvolanek/DevRack/tree/main/docker-compose#readme).
+
 ### Installing Docker Compose
 
 Install docker-compose by going into Apps and searching 'docker compose'. Once installed, return to the docker tab and view the compose tab at the bottom of the page. You can add a new stack and test from here.
