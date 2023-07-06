@@ -8,7 +8,7 @@ The manual steps require use of phpMyAdmin to setup the SQL database to be used 
 
 ### MariaDB
 
-**Note**: The manual configuration may be unecessary with the updated configuration of `cloud-dev.yaml` in the cloud directory.
+**Note**: The manual configuration may be unnecessary with the updated configuration of `cloud-dev.yaml` in the cloud directory.
 
 Login to phpMyAdmin and select the 'Databases' tab. Enter the database name with using the  `utf8mb4_general_ci` character set.
 
@@ -33,13 +33,13 @@ Follow [these](https://docs.nextcloud.com/server/latest/admin_manual/installatio
   - Enter the Servers IP
 - Uncheck 'Install recommended apps'.
 
-**Note**: Entering the Servers IP is a artifact of previous testing of the most reliable method of connecting to the MariaDB container. This should be 'readchable' via docker name (`mariadb_nc`) within the same docker-network.
+**Note**: Entering the Servers IP is a artifact of previous testing of the most reliable method of connecting to the MariaDB container. This should be 'reachable' via docker name (`mariadb_nc`) within the same docker-network.
 
 There are additional items to configure *on* NextCloud itself, part of admin management like additional users, storage permissions, add-ons, etc.
 
 ## Redis
 
-No setup is needed for Redis in conjunciton with the cloud docker-compose stack.
+No setup is needed for Redis in conjunction with the cloud docker-compose stack.
 
 ## Updating nextcloud
 

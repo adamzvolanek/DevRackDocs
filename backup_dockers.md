@@ -22,7 +22,7 @@ Install the [CA Appdata Backup v2.5](https://forums.unraid.net/topic/132721-plug
 - Path to Custom Pre-start Script: `/mnt/user/DevRack/DevRack/scripts/clear_15day_appdata_logged.sh`
 - Path to Custom Start Script:
 - Update Applications On Restart? No
-- Time to wait whenstopping app before killing: `60`
+- Time to wait when stopping app before killing: `60`
 - Delete backups if they are this many days old: `180`
 - Scheduled Backup Frequency: `Daily`
 - Day of Week: Monday

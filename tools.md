@@ -9,8 +9,8 @@ This page covers the setup of tools & plugins used on the Alexandria (Unraid) se
 Setup the Appdata Backup/Restore Plugin as follows.
 
 - Appdata Share (Source): `/mnt/cache/appdata/`
-- Destinatinon Share: `/mnt/user/Backups/Unraid/CA_Backup/Appdata _Backup`
-- Excluded Folders: `/mnt/cache/appdata/.Recycle.Bin/,/mnt/cache/appdata/.Trash-99/,/mnt/cache/appdata/Downloads/,/mnt/cache/appdata/jellyfin/metadata,/mnt/cache/appdata/binhex-minecraftserver,/mnt/cache/Downloads,/mnt/cache/appdata/binhex-lidarr/MediaCover,/mnt/cache/appdata/Jellyfin/trancodes,/mnt/cache/appdata/Jellyfin/metadata,/mnt/cache/appdata/photoprism/cache/,/mnt/cache/appdata/photoprism_external/cache/`
+- Destination Share: `/mnt/user/backups/Unraid/CA_Backup/Appdata _Backup`
+- Excluded Folders: `/mnt/cache/appdata/.Recycle.Bin/,/mnt/cache/appdata/.Trash-99/,/mnt/cache/appdata/Downloads/,/mnt/cache/appdata/jellyfin/metadata,/mnt/cache/appdata/binhex-minecraftserver,/mnt/cache/Downloads,/mnt/cache/appdata/binhex-lidarr/MediaCover,/mnt/cache/appdata/Jellyfin/trancodes,/mnt/cache/appdata/Jellyfin/metadata
 - Use Compression? No
 - Verify Backups? Yes
 - Ignore errors during backup? No
@@ -18,8 +18,8 @@ Setup the Appdata Backup/Restore Plugin as follows.
 
 USB Backup Settings
 
-- USB Backup Destination: `/mnt/user/Backups/Unraid/CA_Backup/FlashDrive_Backup/`
-- libvirt.img Destination: `/mnt/user/Backups/Unraid/CA_Backup/libvirt_Backup/`
+- USB Backup Destination: `/mnt/user/backups/Unraid/CA_Backup/FlashDrive_Backup/`
+- libvirt.img Destination: `/mnt/user/backups/Unraid/CA_Backup/libvirt_Backup/`
 - Notifications Settings: Error Only
 - Time to wait when stopping app before killing: 60
 - Delete backups if they are this many days old: 180
@@ -36,7 +36,7 @@ USB Backup Settings
 - Hashing method: MD5
 - Save new hashing results to flash: Disabled
 - Excluded folders and files: Scratch
-  - Custom folders: `/mnt/disk2/system/libvirt/libvirt.img, /mnt/user/Movies, /mnt/user/TV_Shows`
+  - Custom folders: `/mnt/disk2/system/libvirt/libvirt.img, /mnt/user/media`
   - Custom files: `.Recycle.Bin,*.nfo,*.log,*.xml`
 - Disk verification schedule: Weekly
 - Process priority: Low
@@ -81,7 +81,7 @@ The runtime settings:
 
 - Vendor: NVIDIA
 - Unit ID for Dashboard: 0:....
-- Temperature Format: Celcius
+- Temperature Format: Celsius
 - UI Automatic Refresh / Interval (Milliseconds): Yes, 1000
 
 All remaining settings are setup as 'Yes'.

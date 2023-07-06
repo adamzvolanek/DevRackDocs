@@ -10,7 +10,7 @@ I have not had a persistent and reliable portfolio for others to view, currently
 
 ## Motorcycle
 
-I used to ride my motorcycle since I was 15 years old; I started on a 2012 Honda CBR250 and moved onto a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home.
+I used to ride my motorcycle since I was 15 years old; I started on a 2012 Honda CBR250 and moved onto a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home. Recnetly I purchased a 2022 Triumph Trident.
 
 ## DND
 
@@ -18,7 +18,7 @@ I have DM'd 2 campaigns and been a part of many others.
 
 ## Gaming
 
-I do not own consoles anymore but enjoy playing a eclectc collection of games on Steam, below is a collection of various games I have played over the years since the NintendoDS, PS2, and Xbox360 days:
+I do not own consoles anymore but enjoy playing a eclectic collection of games on Steam, below is a collection of various games I have played over the years since the NintendoDS, PS2, and Xbox360 days:
 
 ### Single-Player
 

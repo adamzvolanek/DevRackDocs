@@ -1,6 +1,6 @@
 # Description
 
-This repository consists of my homelab notes/documentation for deploying my server named Alexandria which can be accessed on my [wiki](http://wiki.adamzvolanek.com). An alternative hosting platform can be found on [blog.adamzvolanek.com](http://blog.adamzvolanek.com).
+This repository consists of my homelab notes/documentation for deploying my server named Alexandria which can be accessed on my [wiki](http://wiki.adamzvolanek.com).
 
 ## Important Note
 

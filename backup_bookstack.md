@@ -6,7 +6,7 @@ This page covers the backup procedure for bookstack including (and especially) t
 
 Package and backup the contents of the `/mnt/user/appdata/docs/bookstack` and `/mnt/user/appdata/docs/bookstack_db` directories. This will include the database, configuration, and text.
 
-*Note* this is **not** the proper way to backup a databse.
+*Note* this is **not** the proper way to backup a database.
 
 ## Official BookStack Backup Method
 

@@ -79,7 +79,7 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
 ### Series --> Library Import
 
-Select the 'Start Import' button, select the `medua\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
+Select the 'Start Import' button, select the `media\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
 
 ## Automated
 

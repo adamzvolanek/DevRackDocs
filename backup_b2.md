@@ -8,7 +8,7 @@ Name the buckets using the following nomenclature: `shareName-serverName-os-regi
 
 Create buckets to match the Unraid User Shares using the nomenclature.
 
-Review the Lifecycle settings for each bucket to have appropriate settings, by default buckets should utilize the "Keep only the last version of the file:". If data needs to be kept, use "Keep prior versions for this number of days:" and enter the number of appropriate days. Entering the number of days utilzies the `daysFromHidingToDeleting`: `30` as noted [here](https://www.backblaze.com/docs/cloud-storage-lifecycle-rules).
+Review the Lifecycle settings for each bucket to have appropriate settings, by default buckets should utilize the "Keep only the last version of the file:". If data needs to be kept, use "Keep prior versions for this number of days:" and enter the number of appropriate days. Entering the number of days utilizes the `daysFromHidingToDeleting`: `30` as noted [here](https://www.backblaze.com/docs/cloud-storage-lifecycle-rules).
 
 ## RClone Setup
 

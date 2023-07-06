@@ -8,7 +8,7 @@ Contents here will include backup procedures for Alexandria which is a replica o
 
 Currently method of backup is using AppData Backup [link](https://forums.unraid.net/topic/132721-plugin-ca-appdata-backup-restore-v25/) where backups are taken weekly and stored on the server.
 
-Dedicated backups of docker container configurations will be specified by specifical backup documentation if available.
+Dedicated backups of docker container configurations will be specified by docker specific documentation if available.
 
 ## Restoration
 
