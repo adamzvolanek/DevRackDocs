@@ -35,9 +35,9 @@ USB Backup Settings
 - Automatically protect new and modified files: Enabled
 - Hashing method: MD5
 - Save new hashing results to flash: Disabled
-- Excluded folders and files: Scratch
-  - Custom folders: `/mnt/disk2/system/libvirt/libvirt.img, /mnt/user/media`
-  - Custom files: `.Recycle.Bin,*.nfo,*.log,*.xml`
+- Excluded folders and files: NextCloud, appdata, domains, isos, media, scratch, system, and transcode
+  - Custom folders: `.Recycle.Bin`
+  - Custom files: `*.nfo, *.log`
 - Disk verification schedule: Weekly
 - Process priority: Low
 - When parity operation is running: Don't start
