@@ -2,6 +2,14 @@
 
 This page covers the setup of radarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
+Reference TRaSH Guide's for [Radarr](https://trash-guides.info/Radarr/) for additional more in-depth documentation.
+
+## Automated
+
+Configuration file to be generated from 'blank' radarr install and imported during compose or a part of local stack directory.
+
+In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configuration for both sonarr and radarr.
+
 ## Manual Steps
 
 Follow these steps if a config file is not provided.
@@ -72,7 +80,3 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 ### Movies --> Library Import
 
 Select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.
-
-## Automated
-
-Configuration file to be generated from 'blank' radarr install and imported during compose or a part of local stack directory.

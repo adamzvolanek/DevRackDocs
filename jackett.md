@@ -1,6 +1,6 @@
 # Jackett
 
-TThis page covers the setup of jackett to deploy in my docker-compose stack(s).
+This page covers the setup of jackett to deploy in my docker-compose stack(s).
 
 ## Manual Steps
 
