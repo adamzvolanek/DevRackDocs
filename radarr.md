@@ -1,4 +1,4 @@
-# Radarr
+# Radarr v4
 
 This page covers the setup of radarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
@@ -14,21 +14,6 @@ In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configurat
 
 Follow these steps if a config file is not provided.
 
-### Settings --> Profiles
-
-Delete the following quality profiles:
-
-- 'SD'
-- 'HD-1080p'
-- 'HD-720p'
-
-Modify 'Any' by renaming it to 'Any(Czech)' and change the Language to Czech. Also modify it by excluding these Qualities:
-
-- BR-DISK, Remux-2160p, Bluray-2160p, WEB 2160p, HDTV-2160p, and Remux-1080p.
-- Exclude all qualities below 'WEB 480p'
-
-Modify 'HD-720p/1080p' by renaming it to 'Any'.
-
 ### Settings --> Custom Formats
 
 Select the plus symbol and name it 'HEVC'. Select the plus symbol for conditions and enter the following information.
@@ -37,6 +22,104 @@ Select the plus symbol and name it 'HEVC'. Select the plus symbol for conditions
 - Regular Expression: `(((x|h)\.?265)|(HEVC))`
 - Leave Negate unchecked. 'If checked, the custom format will not apply...'
 - Check Required. 'This Release Title condition must match for the...'
+
+### Settings --> Profiles
+
+#### Quality Profiles
+
+Modify 'HD-720p/1080p' by renaming it to 'Standard', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Bluray-1080p', and select the "Language" to be 'English'. Verify the following qualifies are selected and de-selected:
+
+- [ ] Raw-HD
+- [ ] BR-DISK
+- [ ] Remux-2160p
+- [ ] Bluray-2160p
+- [ ] WEB 2160p
+- [ ] HDTV-2160p
+- [X] Remux-1080p
+- [X] Bluray-1080p
+- [X] WEB 1080p
+- [X] HDTV-1080p
+- [X] Bluray-720p
+- [X] WEB 720p
+- [X] HDTV-720p
+- [X] Bluray-576p
+- [X] Bluray-480p
+- [X] WEB 480p
+- [ ] DVD-R
+- [ ] DVD
+
+Select 'Save'.
+
+Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Bluray-2160p', and select the "Language" to be 'English'. Verify the following qualifies are selected and de-selected:
+
+- [ ] Raw-HD
+- [ ] BR-DISK
+- [X] Remux-2160p
+- [X] Bluray-2160p
+- [X] WEB 2160p
+- [X] HDTV-2160p
+- [X] Remux-1080p
+- [X] Bluray-1080p
+- [ ] WEB 1080p
+- [ ] HDTV-1080p
+- [ ] Bluray-720p
+- [ ] WEB 720p
+- [ ] HDTV-720p
+- [ ] Bluray-576p
+- [ ] Bluray-480p
+- [ ] WEB 480p
+- [ ] DVD-R
+- [ ] DVD
+
+Select 'Save'.
+
+Create a new "Quality Profile" and set it's name to 'Anime', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'Original'. Verify the following qualifies are selected and de-selected:
+
+- [ ] Raw-HD
+- [ ] BR-DISK
+- [ ] Remux-2160p
+- [ ] Bluray-2160p
+- [ ] WEB 2160p
+- [ ] HDTV-2160p
+- [X] Remux-1080p
+- [X] Bluray-1080p
+- [X] WEB 1080p
+- [X] HDTV-1080p
+- [X] Bluray-720p
+- [X] WEB 720p
+- [ ] HDTV-720p
+- [ ] Bluray-576p
+- [ ] Bluray-480p
+- [ ] WEB 480p
+- [ ] DVD-R
+- [ ] DVD
+
+Select 'Save'.
+
+Create a new "Quality Profile" and set it's name to 'Standard Czech', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'Czech'. Verify the following qualifies are selected and de-selected:
+
+- [ ] Raw-HD
+- [ ] BR-DISK
+- [ ] Remux-2160p
+- [ ] Bluray-2160p
+- [ ] WEB 2160p
+- [ ] HDTV-2160p
+- [X] Remux-1080p
+- [X] Bluray-1080p
+- [X] WEB 1080p
+- [X] HDTV-1080p
+- [X] Bluray-720p
+- [X] WEB 720p
+- [X] HDTV-720p
+- [X] Bluray-576p
+- [X] Bluray-480p
+- [X] WEB 480p
+- [X] DVD-R
+- [X] DVD
+
+Select 'Save'.
+
+Delete any remaining quality profiles.
 
 ### Settings --> Download Clients
 

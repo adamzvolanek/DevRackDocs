@@ -1,4 +1,4 @@
-# Sonarr
+# Sonarr v3
 
 This page covers the setup of sonarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
@@ -16,20 +16,61 @@ Follow these steps if a config file is not provided.
 
 ### Settings --> Profiles
 
-Delete the following quality profiles:
+#### Quality Profiles
 
-- 'SD'
-- 'HD-1080p'
-- 'HD-720p'
+Modify 'HD-720p/1080p' by renaming it to 'Standard', check the "Upgrades Allowed" box, and Upgrade Until 'Bluray-1080p'. Verify the following qualifies are selected and de-selected:
 
-Modify 'Any' by renaming it to 'Any(Czech)' and change the Language to Czech. Also modify it by excluding these Qualities:
+- [ ] Bluray-2160p Remux
+- [ ] Bluray-2160p
+- [ ] WEB 2160p
+- [ ] HDTV-2160p
+- [X] Bluray-1080p Remux
+- [X] Bluray-1080p
+- [X] WEB 1080p
+- [X] Bluray-720p
+- [X] WEB 720p
+- [ ] Raw-HD
+- [X] HDTV-1080p
+- [X] HDTV-720p
+- [X] DVD
+- [X] WEB 480p
+- [ ] SDTV
+- [ ] Unknown
 
-- BR-DISK, Remux-2160p, Bluray-2160p, WEB 2160p, HDTV-2160p, and Remux-1080p.
-- Exclude all qualities below 'WEB 480p'
+Select 'Save'.
 
-Modify 'HD-720p/1080p' by renaming it to 'Any'.
+Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, and Upgrade Until 'Bluray-2160p'. Verify the following qualifies are selected and de-selected:
 
-Under Release Profiles, create a new profile named 'HEVC'. Check 'Enable Profile' and in 'Preferred' enter `x265` wiht a score of 10 and `x264` with a score 5.
+- [X] Bluray-2160p Remux
+- [X] Bluray-2160p
+- [X] WEB 2160p
+- [X] HDTV-2160p
+- [X] Bluray-1080p Remux
+- [X] Bluray-1080p
+- [x] WEB 1080p
+- [ ] Bluray-720p
+- [ ] WEB 720p
+- [ ] Raw-HD
+- [ ] HDTV-1080p
+- [ ] HDTV-720p
+- [ ] DVD
+- [ ] WEB 480p
+- [ ] SDTV
+- [ ] Unknown
+
+Delete the any remaining quality profiles.
+
+#### Language Profiles
+
+Create an profile named 'Anime' with only "Japanese" and "English" selected. Arrange "Japanese" to be above "English".
+
+Create an profile named 'Czech' with only "Czech" and "English" selected. Arrange "Czech" to be above "English".
+
+Create an profile named 'English' with only "English" selected.
+
+#### Release Profiles
+
+Under Release Profiles, create a new profile named 'HEVC'. Check 'Enable Profile' and in 'Preferred' enter `x265` with a score of 10 and `x264` with a score 5.
 
 ### Settings --> Indexers
 
@@ -42,7 +83,7 @@ Under Indexers, add a new indexer named 'Torznab'. The instructions below will a
 - Add the 'Torznab Feed' (from Jackett) to the URL. Traditional structure of URL: `http://<SERVER_IP>:<JACKET_PORT>/api/v2.0/indexers/<INDEXER_NAME>/results/torznab/`
 - Leave the API path as `/api`
 - Add Jackett's API Key (found at the top right of Jackett's home screen)
-- Select the appropriate categoriey `TV (5000)`
+- Select the appropriate category `TV (5000)`
 - Select appropriate anime categories: `TV/Anime (5070)`, `Raw animes (134634)`, and `Anime (140679)`
 - Minimum Seeders: 5
 - Select an appropriate seed ratio. *This over-writes the download clients default*

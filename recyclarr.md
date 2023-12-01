@@ -1,6 +1,6 @@
 # Recyclarr
 
-This page covers the setup of [recyclarr](https://github.com/recyclarr/recyclarr) to deploy in my docker-compose stack(s).
+This page covers the setup of [recyclarr](https://github.com/recyclarr/recyclarr) to deploy in my docker-compose stack(s). Recyclarr is setup to configure quality profiles with HEVC preference **not** language support.
 
 ## Manual Steps
 
