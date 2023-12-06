@@ -193,6 +193,16 @@ echo "This may take a awhile"
 find /mnt/user -maxdepth 9999 -noleaf -type f -name ".DS_Store" -exec rm "{}" \;
 ```
 
+#### `Server Status Ping`
+
+Runs hourly to check-in to HealthChecksIO.
+
+Script location: `/boot/config/plugins/user.scripts/scripts/Networking`
+
+```bash
+# https://github.com/adamzvolanek/DevRack/blob/main/scripts/server_status_ping.sh
+```
+
 #### `Network Routing`
 
 Runs on boot to change default route.
