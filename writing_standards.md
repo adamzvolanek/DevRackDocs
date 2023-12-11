@@ -22,7 +22,7 @@ Generally reserve "Heading level 1" (`#`) for top-most topic levels for each pag
 
 #### four heading levels
 
-Do not use more than four (`####`) heading levels, as when rendering markdown, **bold text** renders at a very similar size.
+Do not use more than four (`####`) heading levels, as when rendering markdown, **bold text** renders at a very similar size unless when requiring it as a header.
 
 ## Code Standards
 
