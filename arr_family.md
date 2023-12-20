@@ -12,4 +12,10 @@ Many of the arr tool installation and configuration can be accompanied by [TRaSH
 
 ## Generating Arr API Keys
 
-Pending.
+_In Radarr Version 4_, navigate to Settings --> General (`<radarr_instance>`/settings/general) and under the "Security" section. An API key exists in place, if it is your first time using the API key, rotate the (API) key by clicking the Red button and copying the key to your clipboard.
+
+Store the key in a password manager if needed for future use.
+
+_In Sonarr Version 3_, navigate to Settings --> General (`<sonarr_instance>`/settings/general) and under the "Security" section. An API key exists in place, if it is your first time using the API key, rotate the (API) key by clicking the Red button and copying the key to your clipboard.
+
+Store the key in a password manager if needed for future use.
