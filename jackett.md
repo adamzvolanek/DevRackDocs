@@ -12,7 +12,7 @@ This page covers the setup of jackett to deploy in my docker-compose stack(s).
 
 ### Adding to *arr family account
 
-Instructions are provided in Jackett for adding indexers to the *arr family, however additional instructions can be found on [radarr](radarr.md) and [sonarr](sonarr.md).
+Instructions are provided in Jackett for adding indexers to the *arr family, however additional instructions can be found on [radarr](./radarr) and [sonarr](./sonarr).
 
 ## Automated Install
 

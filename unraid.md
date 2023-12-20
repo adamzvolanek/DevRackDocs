@@ -65,3 +65,11 @@ If this drive was previously used, it may read it is 'Unmountable: Unsupported p
 If password is not working for root during SSH:
 
 - Select the terminal button on the top-right and type `passwd`. Update your password.
+
+### Creating GMail SMTP Relay
+
+Navigate to your Google Accounts [app passwords](https://myaccount.google.com/apppasswords) and create a new app specific password.
+
+### Nvidia GPU Plugin
+
+[Link](https://forums.unraid.net/topic/98978-plugin-nvidia-driver/) to forum post.
