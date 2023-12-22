@@ -44,7 +44,7 @@ Open the Unraid terminal and type `docker network create {DOCKER_NETWORK}`. Repl
 
 ### Installing Docker Compose
 
-Install docker-compose by going into Apps and searching 'docker compose'. Once installed, return to the docker tab and view the compose tab at the bottom of the page. You can add a new stack and test from here.
+Install docker-compose by going into Apps and searching 'docker compose'. Once installed, return to the docker tab and view the compose tab at the bottom of the page. Instructions for setting up docker-compose can be found [here](./installs#creating-a-docker-compose-stack)
 
 ### Setting up Git
 
