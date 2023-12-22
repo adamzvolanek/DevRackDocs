@@ -52,7 +52,7 @@ Create a deploy key as part of the DevRack repository, `https://github.com/<prof
 
 Create a share to house the git files and use the terminal or ssh to clone your repository.
 
-## Tips
+## Tips + Odds & Ends
 
 If this drive was previously used, it may read it is 'Unmountable: Unsupported partition layout':
 
