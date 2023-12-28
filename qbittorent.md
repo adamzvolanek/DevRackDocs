@@ -41,3 +41,5 @@ WebUI\Password_PBKDF2="@ByteArray(ARQ77eY1NUZaQsuDHbIMCA==:0WMRkYTUWVT9wVvdDtHAj
 The default login for qBittorrent can be found to [here](https://github.com/binhex/arch-qbittorrentvpn/blob/master/README.md?plain=1#L59); `admin` and `adminadmin`.
 
 Pending further instructions, notes for later: https://trash-guides.info/Downloaders/qBittorrent/Basic-Setup/
+
+Continue with setting up Sonarr and Radarr following the respective docs: [sonarr](./sonarr) and [radarr](./radarr).

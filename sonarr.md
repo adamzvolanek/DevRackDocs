@@ -93,15 +93,17 @@ Repeat these steps for each Indexer.
 
 ### Settings --> Download Clients
 
-Select 'Deluge' and name the Download Client. Fill in the remaining fields as follows:
+Select 'qBittorrent' and name the Download Client. Fill in the remaining fields as follows:
 
-- Host: Enter `delugevpn` (this is the same as the container_name in `delugevpn.yaml`)
-- Port: 8112 (leave as default)
+- Name: qBittorrent VPN
+- Host: Enter `qBittorrentvpn` (this is the same as the container_name in `qBittorrent.yaml`)
+- Port: 8089
+- Useranme: admin (change from defualt)
 - Password: (change from default)
-- Category: `sonarr` (leave as default)
+- Category: `tv`
 - Recent Priority: 'Last' (leave as default)
 - Older Priority: 'Last' (leave as default)
-- Add Paused: Remain unchecked (leave as default)
+- Initial State: Start
 - Remove Completed: Checked (leave as default)
 
 ### Settings --> Connections
