@@ -16,12 +16,13 @@ Follow these steps if a config file is not provided.
 
 ### Settings --> Custom Formats
 
-Select the plus symbol and name it 'HEVC'. Select the plus symbol for conditions and enter the following information.
+Select the plus symbol and name it 'HEVC'. Select the plus symbol for "Conditions" and select "Presets" under 'Release Title' and select 'x265'.
 
-- Name: `x265`
-- Regular Expression: `(((x|h)\.?265)|(HEVC))`
-- Leave Negate unchecked. 'If checked, the custom format will not apply...'
-- Check Required. 'This Release Title condition must match for the...'
+Ensure "Required" is checked.
+
+Select the plus symbol again under "Conditions" and name it "x265" with the regular expression of `x265`.
+
+Repeat for creating a `x264` Custom format.
 
 ### Settings --> Profiles
 
@@ -48,9 +49,9 @@ Modify 'HD-720p/1080p' by renaming it to 'Standard', check the "Upgrades Allowed
 - [ ] DVD-R
 - [ ] DVD
 
-Select 'Save'.
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
-Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Bluray-2160p', and select the "Language" to be 'English'. Verify the following qualifies are selected and de-selected:
+Modify 'Ultra-HD', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Bluray-2160p', and select the "Language" to be 'English'. Verify the following qualifies are selected and de-selected:
 
 - [ ] Raw-HD
 - [ ] BR-DISK
@@ -71,9 +72,9 @@ Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, sele
 - [ ] DVD-R
 - [ ] DVD
 
-Select 'Save'.
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
-Create a new "Quality Profile" and set it's name to 'Anime', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'Original'. Verify the following qualifies are selected and de-selected:
+Modify 'HD-1080p' and set it's name to 'Anime'. Check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'English'. Verify the following qualifies are selected and de-selected:
 
 - [ ] Raw-HD
 - [ ] BR-DISK
@@ -87,16 +88,16 @@ Create a new "Quality Profile" and set it's name to 'Anime', check the "Upgrades
 - [X] HDTV-1080p
 - [X] Bluray-720p
 - [X] WEB 720p
-- [ ] HDTV-720p
+- [X] HDTV-720p
 - [ ] Bluray-576p
 - [ ] Bluray-480p
 - [ ] WEB 480p
 - [ ] DVD-R
 - [ ] DVD
 
-Select 'Save'.
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
-Create a new "Quality Profile" and set it's name to 'Standard Czech', check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'Czech'. Verify the following qualifies are selected and de-selected:
+Modify 'SD'  and set it's name to 'Standard Czech'. Check the "Upgrades Allowed" box, select "Upgrade Until Quality" to be 'Remux-1080p', and select the "Language" to be 'Czech'. Verify the following qualifies are selected and de-selected:
 
 - [ ] Raw-HD
 - [ ] BR-DISK
@@ -117,7 +118,7 @@ Create a new "Quality Profile" and set it's name to 'Standard Czech', check the 
 - [X] DVD-R
 - [X] DVD
 
-Select 'Save'.
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
 Delete any remaining quality profiles.
 

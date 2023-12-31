@@ -14,6 +14,16 @@ In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configurat
 
 Follow these steps if a config file is not provided.
 
+### Settings --> Custom Formats
+
+Select the plus symbol and name it 'HEVC'. Select the plus symbol for "Conditions" and select "Presets" under 'Release Title' and select 'x265'.
+
+Ensure "Required" is checked.
+
+Select the plus symbol again under "Conditions" and name it "x265" with the regular expression of `x265`.
+
+Repeat for creating a `x264` Custom format.
+
 ### Settings --> Profiles
 
 #### Quality Profiles
@@ -37,9 +47,9 @@ Modify 'HD-720p/1080p' by renaming it to 'Standard', check the "Upgrades Allowed
 - [ ] SDTV
 - [ ] Unknown
 
-Select 'Save'.
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
-Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, and Upgrade Until 'Bluray-2160p'. Verify the following qualifies are selected and de-selected:
+Modify 'Ultra-HD', check the "Upgrades Allowed" box, and Upgrade Until 'Bluray-2160p'. Verify the following qualifies are selected and de-selected:
 
 - [X] Bluray-2160p Remux
 - [X] Bluray-2160p
@@ -58,6 +68,8 @@ Modify 'SD' by renaming it to 'Ultra-HD', check the "Upgrades Allowed" box, and 
 - [ ] SDTV
 - [ ] Unknown
 
+Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
+
 Delete the any remaining quality profiles.
 
 #### Language Profiles
@@ -67,10 +79,6 @@ Create an profile named 'Anime' with only "Japanese" and "English" selected. Arr
 Create an profile named 'Czech' with only "Czech" and "English" selected. Arrange "Czech" to be above "English".
 
 Create an profile named 'English' with only "English" selected.
-
-#### Release Profiles
-
-Under Release Profiles, create a new profile named 'HEVC'. Check 'Enable Profile' and in 'Preferred' enter `x265` with a score of 10 and `x264` with a score 5.
 
 ### Settings --> Indexers
 
