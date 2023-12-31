@@ -1,4 +1,4 @@
-# Sonarr v3
+# Sonarr v4
 
 This page covers the setup of sonarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
