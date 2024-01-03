@@ -15,8 +15,7 @@ It is expected for qBittorrent to fail on first run due to missing openVPN files
 In the qbittorrent config volume (`binhex-qbittorrentvpn/openvpn/`) add VPNs OpenVPN configuration files.
 
 - Certificate file (`ca....crt`)
-- OVPN file (`*.ovpn`)
-- Credentials file (`credentials.conf`)
+- OVPN file (`*.ovpn`) for the region to be used
 - CMS (S/MIME) file (`crl...pem`)
 
 Start the stack again by selecting "Compose Up" and allow container to load. You can monitor the logs to view when the container is ready to view the WebUI.
