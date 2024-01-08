@@ -38,6 +38,20 @@ Radarr/Sonarr
 
 Within "Sync Profiles" modify "Minimum Seeders" to 5.
 
+### Settings --> Indexers
+
+Follow TRaSH Guides page on [FlareSolverr](https://trash-guides.info/Prowlarr/prowlarr-setup-flaresolverr/) to configure.
+
+If site is down, follow these instructions.
+
+- Select the + symbol and select 'FlareSolverr'.
+- Name the Indexer Proxy
+- Add the `flaresolverr` tag
+- Configure the host. e.g. `http://flaresolverr:8191`
+- Select "Test" and click "Save".
+
+Adding FlareSolverr will be done in the [Indexer](#indexers) section of the doc.
+
 ### Indexers
 
 Select Indexers and "Add New Indexer". Select the indexer desired to be added.
@@ -45,3 +59,10 @@ Select Indexers and "Add New Indexer". Select the indexer desired to be added.
 Modify the 'Download link' to be "magnet" and 'Download link (fallback) to be 'iTorrents.org'.
 
 Repeat for additional indexers.
+
+**Adding FlareSolverr**
+
+- Select the indexer needed to use with FlareSolverr
+- Select the wrench icon
+- Scroll towards the bottom of the indexer's Tags and add the tag used for flaresolverr above. e.g. `flaresolverr`
+- Click "Test" and "Save"
