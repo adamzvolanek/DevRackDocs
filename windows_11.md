@@ -179,5 +179,3 @@ Select the following:
   - Steam
 - Compression
   - 7-Zip
-
-## Automated
