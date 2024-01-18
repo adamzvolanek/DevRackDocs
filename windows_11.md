@@ -125,13 +125,6 @@ Run in cmd with admin-mode:
   - To restore
     -     reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
 
-Run in powershell:
-
-- Remove WindowsPhone
-  -     Get-AppxPackage *YourPhone* | Remove-AppxPackage
-  -     Get-AppxPackage -allusers *YourPhone* | Remove-AppxPackage
-  -     Get-AppxProvisionedPackage –online | where-object {$_.packagename –like "*YourPhone*"} | Remove-AppxProvisionedPackage –online
-
 ## Ninite
 
 Select the following:
