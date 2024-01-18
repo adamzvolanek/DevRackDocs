@@ -110,8 +110,6 @@ Run in cmd with admin-mode:
 
 - Force File Explorer to open to This PC instead of Quick Access
   -     reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v LaunchTo /t REG_DWORD /d 1 /f
-- Disable AutoUpdate Apps Microsoft Store
-  -     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1 /f
 - Disable Promotional Apps
   -     reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v PreInstalledAppsEnabled /t REG_DWORD /d 0 /f
 - Disable Cloud Search
