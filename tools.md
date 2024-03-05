@@ -213,3 +213,11 @@ Script location: `/boot/config/plugins/user.scripts/scripts/Networking`
 #!/bin/bash
 ip route add default via 192.168.1.1 dev br0
 ```
+
+## Dockers
+
+All dockers can be installed via Unraid's Apps page that is installed via [Community Applications](./unraid#once-booted).
+
+#### Krusader
+
+No special setup required.
