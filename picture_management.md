@@ -6,14 +6,10 @@ Limitation, the symlinks do not maintain the original files date of creation/mod
 
 ## Automated
 
-This does not work as expected. Requires a *copy* of the photos wanted in a separate directory, defeating the purpose of using symlinks...
-
-Future-work: Have user create a directory with the copy of phone pictures desired. Script will prompt for temporary directory with copies of photos, ask for source directory (where photos are backed up to), and destination directory. Have script run through list of photos in temporary directory (loop) and symlink matching file names from source to destination directory.
-
 Pre-requities:
 
-- Create directory that contains a copy of the pictures desired.
-- Have explicit path of temporary directory with photos to be symlinked. (from source)
+- Create a temporary directory that contains a copy of the pictures desired. 
+- Have explicit path of temporary directory with photos to be symlinked (e.g. `/mnt/user/backups/Adam/Phone\ Backup/2024/02`)
 - Have explicit path of source location on the server (e.g. `/mnt/user/pictures/Gaming/FSX`)
 - Have explicit path of destination location on the server (e.g. `/mnt/user/pictures/Gaming/Test_Destination`)
 
@@ -25,11 +21,11 @@ Both scripts behave the same way natively when run on their respective operating
 
 On Windows:
 
-- The script checks for the existence of plink, asks for the source directory, destination directory, and the root password for the server. Afterwards it will plink to the server to the hard-coded script location where the .sh file lives. [/mnt/user/DevRack/DevRack/scripts/photo_symlink.sh](https://github.com/adamzvolanek/DevRack/tree/main/scripts)
+- The script checks for the existence of plink, asks for the temporary directory, source directory, destination directory, and the root password for the server. Afterwards it will plink to the server to the hard-coded script location where the .sh file lives. [/mnt/user/DevRack/DevRack/scripts/photo_symlink.sh](https://github.com/adamzvolanek/DevRack/blob/main/scripts/photo_symlink.sh)
 
 On Unraid:
 
-- If the source and destination directories are not provided as arguements, it prompts the user for input; the script also performs validation of path existing prior to executing. It then generates a list of files in the source directory to loop over generating symlinks in the source directory. A touch command is run to preserve file modification time.
+- If the temporary, source, and destination directories are not provided as arguements, it prompts the user for input; the script also performs validation of paths existing prior to executing. It then generates a list of files in the temporary directory to loop over generating symlinks from the source directory to the destination directory. A touch command is run to preserve file modification time and the output is shown to the user.
 
 ## Manual Steps
 
