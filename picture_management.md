@@ -13,7 +13,7 @@ Pre-requities:
 - Have explicit path of source location on the server (e.g. `/mnt/user/pictures/Gaming/FSX`)
 - Have explicit path of destination location on the server (e.g. `/mnt/user/pictures/Gaming/Test_Destination`)
 
-### `photo_symlink` script
+### Photo Symlink Script
 
 There are two scripts that the photo symlink creation process use. One that is windows native (ends in `.bat`) and the other in shell. (ends in `.sh`)
 
