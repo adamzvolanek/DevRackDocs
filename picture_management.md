@@ -23,6 +23,12 @@ On Windows:
 
 - The script checks for the existence of plink, asks for the temporary directory, source directory, destination directory, and the root password for the server. Afterwards it will plink to the server to the hard-coded script location where the .sh file lives. [/mnt/user/DevRack/DevRack/scripts/photo_symlink.sh](https://github.com/adamzvolanek/DevRack/blob/main/scripts/photo_symlink.sh)
 
+Common issues when running on windows:
+
+- Command window quickly disappears after running
+  - Check the destination directory the phone photos are added.
+  - Verify the `.sh` script is executable. If not, PuTTY into Alexandria as root and issue `chmod u+x /mnt/user/DevRack/DevRack/scripts/photo_symlink.sh`
+
 On Unraid:
 
 - If the temporary, source, and destination directories are not provided as arguements, it prompts the user for input; the script also performs validation of paths existing prior to executing. It then generates a list of files in the temporary directory to loop over generating symlinks from the source directory to the destination directory. A touch command is run to preserve file modification time and the output is shown to the user.
