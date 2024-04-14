@@ -18,6 +18,26 @@ Follow these steps if a config file is not provided.
 - Select Theme: Dark
 - Storage Template: Off
 
+### Admin Account Settings
+
+- Select the profile icon at the top-right
+- Select "Account Settings"
+- Select "App Settings"
+  - Change "Default Locale" to be "English (United Kingdom)"
+  - Uncheck "Display original photos"
+  - Uncheck "Play video thumbnail on hover"
+  - Check "Permanent deletion warning"
+  - Uncheck "People"
+  - Check "Sharing"
+- Select "Memories"
+  - Uncheck "Time-based memories"
+
+### Administration Settings
+
+- Select Settings
+  - Select "Job Settings"
+    - Set all concurrency threads to 1
+
 ### External Library Import
 
 - Select Administration at the top-right
@@ -28,10 +48,11 @@ Follow these steps if a config file is not provided.
   - Rename to appropriate name
   - Select "Edit Import Paths"
     - Enter `/external_photos`
-      - This should match immich's volume
+      - This matches immich's volume mounting in the docker-compose file
   - Select "Scan Settings"
     - Select "Add Exclusion Pattern"
       - Enter `**/Raw/**` to exclude photos in folders named "Raw"
+      - Select "Save"
   - Select "Scan New Library Files"
 - Select "Settings"
   - Select "External Library"
@@ -68,17 +89,3 @@ Follow these steps if a config file is not provided.
     - Delete Delay: 14
   - Select "Video Transcode Settings"
     - Check "HEVC" under "Video Codec"
-
-### Admin Account Settings
-
-- Select the profile icon at the top-right
-- Select "Account Settings"
-- Select "App Settings"
-  - Change "Default Locale" to be "English (United Kingdom)"
-  - Uncheck "Display original photos"
-  - Uncheck "Play video thumbnail on hover"
-  - Check "Permanent deletion warning"
-  - Uncheck "People"
-  - Check "Sharing"
-- Select "Memories"
-  - Uncheck "Time-based memories"
