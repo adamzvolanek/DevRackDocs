@@ -41,7 +41,7 @@ Once Photoprism is in 'public' mode, the following script will be needed to trig
   - [ ] Upload
   - [ ] Download
   - [ ] Import
-  - [X] Share
+  - [ ] Share
   - [ ] Edit
   - [ ] Archive
   - [ ] Delete
@@ -59,3 +59,7 @@ Once ready for public viewing, modify the `PUBLIC_READY` environment variable in
 Manual trigger for library update: `/usr/bin/docker exec -it <name_of_photo_prism_container> /opt/photoprism/bin/photoprism index`
 
 This script should also be added to Unraid's User Scripts configuration as a cron job.
+
+#### Editing `settings.yaml`
+
+Edit the settings file and set albums to false, disabling the album feature.
