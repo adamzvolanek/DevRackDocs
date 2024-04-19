@@ -13,3 +13,5 @@ Navigate to Settings at the bottom left, Integrations, and add the following:
 - Unifi, Unifi Protect
 - Honeywell Total Connect Comfort (US)
 - National Weather Service (NWS)
+  - Select the NWS Integration, Entities, and Enable the following:
+    - {METAR}_temperature and {METAR}_humidity
