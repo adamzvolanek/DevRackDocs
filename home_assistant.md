@@ -4,6 +4,12 @@ This page covers the setup of [Home Assistant](https://www.home-assistant.io/) t
 
 ## Manual Steps
 
-### Initial Setup of JellyFin
+### Initial Setup of Home Assistant
 
-placeholder text
+Enter username and password as shown.
+
+Navigate to Settings at the bottom left, Integrations, and add the following:
+
+- Unifi, Unifi Protect
+- Honeywell Total Connect Comfort (US)
+- National Weather Service (NWS)
