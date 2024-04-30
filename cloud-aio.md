@@ -6,18 +6,6 @@ This page covers the setup of [NextCloud AIO](https://github.com/nextcloud/all-i
 
 Steps taken from [here](https://myunraid-ru.translate.goog/nextcloud-aio/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)
 
-### Share
-
-Create `NextCloud AIO` share in Unraid. Set the rights using [WinSCP](https://winscp.net/eng/index.php):
-![alt text](cloud-aio-winscp.png.png)
-
-Summarized:
-
-- Group: 33
-- Owner: 33
-- Oct: 0770
-- [X] "Set permissions for descendants"
-
 ### WebUI
 
 Navigate to `https://${SERVER_IP}:8089/`. The 8089 port should be what is listed on [line 16](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud-aio/cloud-aio.yaml).
