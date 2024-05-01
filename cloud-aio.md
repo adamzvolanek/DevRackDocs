@@ -2,6 +2,8 @@
 
 This page covers the setup of [NextCloud AIO](https://github.com/nextcloud/all-in-one) to deploy in my docker-compose cloud stack.
 
+This procedure has been **deprecated** and instead using [NextCloud](./cloud).
+
 ## Manual Steps
 
 Steps taken from [here](https://myunraid-ru.translate.goog/nextcloud-aio/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)

@@ -4,6 +4,8 @@ This page covers the setup of Immich to deploy in my docker-compose stack(s). Th
 
 [Immich Site](https://immich.app/)
 
+This procedure has been **deprecated** and instead using [Photoprism](./photoprism) due to instability of Immich during testing.
+
 ## Automated
 
 Pending.

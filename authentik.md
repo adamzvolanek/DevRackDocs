@@ -8,7 +8,7 @@ Authentik [documentation](https://version-2023-5.goauthentik.io/docs/)
 
 ### Applications
 
-Upon starting Authentik, enter the 'Admin' interface and select "Applications". 
+Upon starting Authentik, enter the 'Admin' interface and select "Applications".
 
 #### Setup Providers
 

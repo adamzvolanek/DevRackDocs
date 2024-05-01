@@ -2,6 +2,8 @@
 
 This page covers the setup of jackett to deploy in my docker-compose stack(s).
 
+This procedure has been **deprecated** and instead using [Prowlarr](./prowlarr).
+
 ## Manual Steps
 
 ### Adding Indexers
