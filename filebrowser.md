@@ -2,6 +2,8 @@
 
 This page covers the setup of [filebrowser](https://github.com/filebrowser/filebrowser) to deploy in [my](https://github.com/adamzvolanek/DevRack/tree/main/docker-compose/cloud/filebrowser) filebrowser directory.
 
+5/02/2024: FileBrowser use has been stopped.
+
 ## Manual Steps
 
 Prerequisites:
@@ -15,11 +17,15 @@ Prerequisites:
 
 Navigate to Settings --> Global Settings
 
+- [ ] Allow users to signup
+- [X] Auto create user home dir while adding new user
+- Base path for user home directories: `/unraid/`
+  - Using this path assumes "shares" of the same name as the user. Case-sensitive.
+
 Under Chunked Uploads, update the file to read: 50 MB.
 
 To Do:
 
-- share management for user home dirs.
 - Rules?
 - Branding
 - Nginx
