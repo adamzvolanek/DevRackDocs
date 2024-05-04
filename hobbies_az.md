@@ -1,24 +1,33 @@
 # Hobbies
 
+## DevRack
+
+Since working full-time in 2019 after graduating college, I was introduced to servers, network storage, and networking in general. Thinking it was cool, I started my own self-hosted journey which is now covered by this wiki page and plenty of other services. Technical items are captured in my [DevRack](https://github.com/adamzvolanek/DevRack) project while write-ups and the like are captured here.
+
 ## Exercise
 
-I enjoy working out, playing sports, and staying in shape. Truly I think it keeps my mind healthy.
+I enjoy working out, playing sports, and staying in shape. It it keeps me physically in-shape but more importantly, mentally healthy.
 
 ## Photography
 
-I have not had a persistent and reliable portfolio for others to view, currently the best way to view my work is via [Instagram](https://www.instagram.com/zvolanek.photography/).
+I have not had a persistent and reliable portfolio for others to view, currently the best way to view my work is via [Instagram](https://www.instagram.com/zvolanek.photography/). I currently use two Sony A6600's with a myriad of lenses,
+
+- Sigma 16mm f/1.4
+- Sony 18-135mm f/3.5-5.6
+- Sigma 56mm f/1.4
+- Sony 70-350mm f/4.3-6.3
 
 ## Motorcycle
 
-I used to ride my motorcycle since I was 15 years old; I started on a 2012 Honda CBR-250 and moved onto a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home. Now ride a 2020 Triumph Trident 660.
+I have been riding motorcycles since I was 15 years old however have since hung up the keys in 2024. For a quick backstory, I started on a red 2012 Honda CBR-250 and transitioned to a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home. I bought a 2020 Triumph Trident 660 which I told in 2024.
 
 ## DND
 
-I have DM'd 2 campaigns and been a part of many others.
+I have DM'd 2 campaigns and been a part of many others. During my DM'ing of campaigns, I incorporated background sounds, music, and online side-games. Think: You're on a ship and you muster your way under the deck, you find a group of individuals playing card games. If you joined that table of card-games, I found a website that played the same game with other AI and player joinable.
 
 ## Gaming
 
-I do not own consoles anymore but enjoy playing a eclectic collection of games on Steam, below is a collection of various games I have played over the years since the NintendoDS, PS2, and Xbox-360 days:
+I do not own consoles anymore but enjoy playing a eclectic collection of games on Steam, below is a collection of various games I have played over the years since the NintendoDS, PS2, and Xbox-360 days.
 
 <details><summary><h3>Single player</h3></summary>
 
