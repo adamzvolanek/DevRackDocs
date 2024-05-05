@@ -8,14 +8,14 @@ Follow these steps to setup Nginx Proxy Manager.
 
 ### Cloud Setup
 
-These steps are for [NextCloud AIO](./cloud-aio.md)!
+These steps are for [NextCloud AIO](./cloud-aio)!
 
 #### Details
 
 - Domain Names: `subdomain.domain.tld`
 - Scheme: http
 - Forward Hostname/IP: ${SERVER_IP}
-- Forward Port: 11000 (Apache Port defined in [cloud-aio.yam](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud-aio/cloud-aio.yaml))
+- Forward Port: 11000 (Apache Port defined in [cloud-aio.yaml](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud-aio/cloud-aio.yaml))
 
 #### Proxy Host
 

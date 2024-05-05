@@ -1,6 +1,6 @@
 # Arr Guides
 
-Contents here will include setup and configuration of various arr tools: Radarr, Sonarr, and Jackett. In the future Jackett will be replaced by Prowlarr.
+Contents here will include setup and configuration of various arr tools: Radarr, Sonarr, and Prowlarr. Prowlarr has replaced Jackett.
 
 ## UnRaid Setup
 

@@ -1,4 +1,4 @@
-# Wiki Writing Standards
+# My Writing Standards
 
 This page covers documentation standards throughout this markdown formatted wiki.
 
