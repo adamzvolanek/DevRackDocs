@@ -54,14 +54,13 @@ Currently not setup. [Setup Link](https://docs.goauthentik.io/integrations/servi
 
 Proposed structure of Alexandria BookStack:
 
-| Shelf     | Book              | Page                      | Page   |
-|---------  |---------------    |-------------------------  |------- |
-| DevRack   | Alexandria        | Installation Procedures   |        |
-| DevRack   | Alexandria        | Backups                   | Various Backup Solutions |
-| DevRack   | Alexandria        | Dockers                   | Various Docker Stacks |
-| DevRack   | Alexandria        | Photopraphy               |        |
-| DevRack   | Windows           | Windows 10 to 11 Upgrade  |        |
-| About     | Adam Zvolanek     | Hobbies                   | Photopraphy |
+| Shelf     | Book              | *Chapter(s)* and Page(s)          | Page(s)                  |
+|---------- |------------------ |---------------------------------- | ------------------------ |
+| DevRack   | Backups           | Alexandria, Authentik...          |                          |
+| DevRack   | Docker Stacks     | Docker Stacks and *Docker Family* | Docker Stacks            |
+| DevRack   | Windows           | Various Windows Related Pages     | Various Docker Stacks    |
+| DevRack   | Unraid            | Various Unraid Related Pages      |                          |
+| About Me  | Adam Zvolanek     | Various Pages                     |                          |
 
 ## Automated
 

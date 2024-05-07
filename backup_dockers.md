@@ -17,8 +17,8 @@ Install the [CA Appdata Backup v2.5](https://forums.unraid.net/topic/132721-plug
 - Create separate archives (one per folder): No
 - USB Backup Destination: `/mnt/user/Backups/Unraid/CA_Backup/FlashDrive_Backup/`
 - livirt.img Destination: `/mnt/user/Backups/Unraid/CA_Backup/libvirt_Backup/`
-- Notification Settings: 'Errors Only'
-- Path to Custom Stop Script: 
+- Notification Settings: "Errors Only"
+- Path to Custom Stop Script:
 - Path to Custom Pre-start Script: `/mnt/user/DevRack/DevRack/scripts/clear_15day_appdata_logged.sh`
 - Path to Custom Start Script:
 - Update Applications On Restart? No
@@ -34,8 +34,8 @@ Backups are placed daily to `backups/Unraid/CA_Backup/Appdata_Backup`
 
 ## Restoring
 
-To restore via a backup, navigate to `alexandria/Settings/BackupMainV2/` and select the 'Restore Appdata' tab.
+To restore via a backup, navigate to `alexandria/Settings/BackupMainV2/` and select the "Restore Appdata" tab.
 
-Verify the 'Source Directory' and 'Destination Directory' match the configuration above and options should appear as a drop-down to 'Select a Backup Set to Restore'.
+Verify the "Source Directory" and "Destination Directory" match the configuration above and options should appear as a drop-down to "Select a Backup Set to Restore".
 
-Select a backup and click 'Restore'.
+Select a backup and click "Restore".
