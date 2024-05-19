@@ -45,7 +45,7 @@ Select "Save" and "Send test email". Select "Email" on the left-side.
         
         Note: {desc}
         
-        Shared securely with Pingvin Share 🐧 via Alexandria
+        Shared securely via Alexandria File Exchange.
 
 - Reverse share subject: Alexandria Reverse share link used
 - Reverse share message:
@@ -54,7 +54,7 @@ Select "Save" and "Send test email". Select "Email" on the left-side.
         
         A share was just created with your reverse share link: {shareUrl}
         
-        Shared securely with Pingvin Share 🐧 via Alexandria
+        Shared securely via Alexandria File Exchange.
 
 - Reset password subject: Alexandria File Exchange password reset
 - Reset password message:
@@ -65,7 +65,7 @@ Select "Save" and "Send test email". Select "Email" on the left-side.
         
         The link expires in a hour.
 
-        Pingvin Share 🐧via Alexandria
+        Alexandria File Exchange.
 
 - Invite subject: Alexandria File Exchange Share Invite
 - Invite message:
@@ -76,7 +76,7 @@ Select "Save" and "Send test email". Select "Email" on the left-side.
 
         Your password is: {password}
 
-        Pingvin Share 🐧via Alexandria
+        Pingvin Share 🐧via Alexandria File Exchange.
 
 Select "Share" on the left-side.
 
