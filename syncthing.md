@@ -18,6 +18,9 @@ Navigate to the Actions at the top right and select "Settings".
   - [X] "Sync Ownership"
   - [X] Ignore permissions
   - Select "Save"
+- Select "Actions" then "Advanced"
+  - Select "Default Ignore Patterns"
+    - Add `.Recycle.Bin`
 
 ## Adding Folder
 
