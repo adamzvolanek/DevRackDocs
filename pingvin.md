@@ -6,6 +6,10 @@ This page covers the configuration of the [PingVin-Share](https://github.com/sto
 
 Steps here cover the manual configuration of the PingVin-Share application.
 
+### Pre-Docker Steps
+
+Monitor [this link](https://github.com/stonith404/pingvin-share/issues/137#issuecomment-2124844225).
+
 ### Configuration
 
 Select "Get started" and enter the following fields:
