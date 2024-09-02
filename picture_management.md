@@ -1,12 +1,12 @@
 # Picture Management
 
-This page covers how I am currently handling "merging" pictures between my Sony mirrorless camera(s) and personal phone (Pixel 7) with images already synced to my server via [nextcloud](./cloud).
-
-Limitation, the symlinks do not maintain the original files date of creation/modification.
+This page covers how I am currently handling "merging" pictures between my Sony mirrorless camera(s) and personal phone (Pixel 7). Images from the phone are downloaded from dedicated (and shared) Google Photos albums.
 
 ## Automated
 
-Pre-requities:
+Prerequisites:
+
+All paths must be entered into the batch script with Linux based paths.
 
 - Create a temporary directory that contains a copy of the pictures desired.
 - Have explicit path of temporary directory with photos to be symlinked (e.g. `/mnt/user/backups/Adam/Phone\ Backup/2024/02`)
@@ -31,7 +31,7 @@ Common issues when running on windows:
 
 On Unraid:
 
-- If the temporary, source, and destination directories are not provided as arguements, it prompts the user for input; the script also performs validation of paths existing prior to executing. It then generates a list of files in the temporary directory to loop over generating symlinks from the source directory to the destination directory. A touch command is run to preserve file modification time and the output is shown to the user.
+- If the temporary, source, and destination directories are not provided as arguments, it prompts the user for input; the script also performs validation of paths existing prior to executing. It then generates a list of files in the temporary directory to loop over generating symlinks from the source directory to the destination directory. A touch command is run to preserve file modification time and the output is shown to the user.
 
 ## Manual Steps
 

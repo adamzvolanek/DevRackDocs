@@ -2,6 +2,8 @@
 
 This page covers the setup of mariadb and NextCloud to deploy in my docker-compose cloud stack. Currently there is no method to "stop and move" the mariaDb and NextCloud instances without re-setting up the manual steps section.
 
+**NextCloud and it's MariaDB have been stopped in favor of Syncthing.**
+
 ## Manual Steps
 
 The manual steps require use of phpMyAdmin to setup the SQL database to be used with NextCloud. There is a development `cloud-dev` docker-compose stack that adds Redis and additional docker parameters added to allow NextCloud to setup and connect to MariaDB container on-boot.
