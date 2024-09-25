@@ -73,3 +73,7 @@ Navigate to your Google Accounts [app passwords](https://myaccount.google.com/ap
 ### Nvidia GPU Plugin
 
 [Link](https://forums.unraid.net/topic/98978-plugin-nvidia-driver/) to forum post.
+
+### Linking DevRack Shares Via Symlink to User Scripts
+
+See in [tools](./tools#user-scripts) page.
