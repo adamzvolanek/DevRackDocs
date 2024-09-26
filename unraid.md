@@ -38,6 +38,16 @@ In the Unraid settings --> Disk Settings change 'Enable auto start' to Yes.
 
 *If using an ssd in the array*, install 'Dynamix SSD Trim'. Have SSD Trim scheduled for daily.
 
+Setup any additional Unraid shares as desired.
+
+#### Secure Shares
+
+Create a user within Unraid's "Users" tab. Upon creation of a user, verify permission of any shares that set as "Secure" and your user has Read/Write permissions.
+
+After verification run the [network_drive_mounts](https://github.com/adamzvolanek/DevRack/blob/main/scripts/windows_11) powershell script.
+
+Note: You may need to allow PowerShells to be run on your Windows PC. Open Powershell as administrator and type `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` than select 'Y'.
+
 ### Setting up Docker network
 
 Open the Unraid terminal and type `docker network create {DOCKER_NETWORK}`. Replacing the brackets and contents of DOCKER_NETWORK with the docker network name desired. The variable `${DOCKER_NETWORK}` is also referenced as part of the docker-compose configuration found [here](https://github.com/adamzvolanek/DevRack/tree/main/docker-compose#readme).
@@ -73,7 +83,3 @@ Navigate to your Google Accounts [app passwords](https://myaccount.google.com/ap
 ### Nvidia GPU Plugin
 
 [Link](https://forums.unraid.net/topic/98978-plugin-nvidia-driver/) to forum post.
-
-### Linking DevRack Shares Via Symlink to User Scripts
-
-See in [tools](./tools#user-scripts) page.
