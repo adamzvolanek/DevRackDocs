@@ -167,12 +167,6 @@ Enable unBALANCE Server: Yes
 
 Create the "skeleton" of the user scripts as shown in the backup repo, that will then generate the list of user script directories under `/boot/config/plugins/user.scripts/scripts`. Then copy contents from the backup repo into the scripts using the Unraid UI. Setup the backup git repo symlink after copying/creating scripts into place. Create a symlink from backup git repo by issuing:
 
-    ln -s /boot/config/plugins/user.scripts/scripts /mnt/user/DevRack/
-
-This will create a symlink from `/mnt/user/DevRack/` to `/boot/config/plugins/user.scripts/scripts` and allow the backup repo to be updated in event of script modification from user on Unraid UI.
-
-Note: It has not been tested if changes *from* Git will reflect in the Unraid UI.
-
 #### `delete_dangling_images`
 
 Script deletes any 'dangling' images within your docker.img file.
