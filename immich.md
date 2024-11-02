@@ -18,7 +18,8 @@ Follow these steps if a config file is not provided.
 
 - Create Admin Profile
 - Select Theme: Dark
-- Storage Template: Off
+- Storage Template: On
+  - Configure to use "2022/02/IMAGE_56437". Template should be `{{y}}/{{MM}}/{{filename}}`.
 
 ### Admin Account Settings
 
@@ -26,13 +27,29 @@ Follow these steps if a config file is not provided.
 - Select "Account Settings"
 - Select "App Settings"
   - Change "Default Locale" to be "English (United Kingdom)"
-  - Uncheck "Display original photos"
-  - Uncheck "Play video thumbnail on hover"
-  - Check "Permanent deletion warning"
-  - Uncheck "People"
-  - Check "Sharing"
+  - [ ] "Display original photos"
+  - [ ] "Play video thumbnail on hover"
+  - [ ] "Loop videos"
+  - [X] "Permanent deletion warning"
+  - [ ] "People"
+  - [X] "Sharing"
 - Select "Memories"
   - Uncheck "Time-based memories"
+- Select "Features"
+  - Select "Folders"
+    - [X] Enable
+    - [X] Sidebar
+  - [ ] Time-based memories
+  - Select "People"
+    - [ ] Enable
+  - Select "Star rating"
+    - [ ] Enable
+  - Select "Tags"
+    - [ ] Enable
+- Select "Notifications"
+  - [X] Enable email notifications
+  - [X] Album added
+  - [X] Album updated
 
 ### Administration Settings
 
@@ -41,6 +58,8 @@ Follow these steps if a config file is not provided.
     - Set all concurrency threads to 1
 
 ### External Library Import
+
+[Immich Link](https://immich.app/docs/guides/external-library/)
 
 - Select Administration at the top-right
 - Select "External Libraries" in Settings
@@ -58,18 +77,21 @@ Follow these steps if a config file is not provided.
   - Select "Scan New Library Files"
 - Select "Settings"
   - Select "External Library"
-    - Check "Watch filesystem"
+    - [X] "Watch filesystem"
   - Select "Periodic Scanning"
-    - Check "Enabled"
+    - [X] "Enabled"
     - Edit the cron to read `10 23 4,20 * *` # At 23:10 on day-of-month 4 and 20.
   - Select "Logging"
-    - Check Enabled
+    - [X] Enabled
     - Level: Log
   - Select "Machine Learning Settings"
-    - Uncheck "Enabled"
+    - [ ] "Enabled"
   - Skip "Map & GPS Settings"
   - Select "OAuth Authentication"
-    - Check "Enable"
+    - [ ] Enable
+    - <details><summary>Authentik Setup</summary>
+
+      - [X] "Enable"
       - Issuer URL:
       - Client ID:
       - Client Secret:
@@ -79,15 +101,17 @@ Follow these steps if a config file is not provided.
       - Storage Quota Claim:
       - Default Storage Quota (GiB): 0
       - Button Text: Login with Adam's Authentik!
-      - Check "Auto Register"
-      - Check "Auto Launch"
-      - Uncheck "Mobile Redirect URI Override"
+      - [X] "Auto Register"
+      - [X] "Auto Launch"
+      - [ ] "Mobile Redirect URI Override"
+
+      </details>
   - Select "Server Settings"
-    - Enter "External Domain": `https://sudomain.adamzvolanek.com`
-    - Enter "Welcome Message": Zvolanek Photo Share
+    - Enter "External Domain": `https://subdomain.adamzvolanek.com`
+    - Enter "Welcome Message": Zvolanek Photo Backup
   - Select "Trash Settings"
-    - Uncheck "Enabled"
+    - [ ] "Enabled"
   - Select "User Settings"
     - Delete Delay: 14
   - Select "Video Transcode Settings"
-    - Check "HEVC" under "Video Codec"
+    - [X] "HEVC" under "Video Codec"
