@@ -24,7 +24,7 @@ Prerequisites:
   - Global Settings
     - [ ] Allow users to signup
     - [ ] Auto create user home dir while adding new user
-    - Base path for user home directories: `/users`
+    - Base path for user home directories: `/unraid`
     - Branding
       - Instance name: {Server Name} File Browser
       - Branding directory path: `/branding`
@@ -34,6 +34,12 @@ Prerequisites:
       - Number of retires... 5
   - Command runner
     - Before Upload: `echo $USERNAME $FILE $SCOPE`
+- User Management
+  - Username: *UserName*
+  - Password: Set
+  - Scope: `{Username}`
+  - Permissions:
+    - All checked except for **Administrator** and **Execute Commands**
 
 ## Automated Setup
 
