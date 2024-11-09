@@ -16,15 +16,16 @@ Prerequisites:
 - Settings
   - Profile Settings
     - [ ] Hide dotfiles
-    - [X] Use single clicks to open files and directories
+    - [ ] Use single clicks to open files and directories
     - [X] Set exact date format
     - Language: English
     - Change Password
       - Update your admin user password.
   - Global Settings
-    - [ ] Allow users to signup
-    - [ ] Auto create user home dir while adding new user
-    - Base path for user home directories: `/unraid`
+    - [X] Allow users to signup
+    - [X] Auto create user home dir while adding new user
+    - Base path for user home directories: `cloud/`
+      - This reason for `cloud/` is due to the settings.json file including the root directory as `/unraid` already.
     - Branding
       - Instance name: {Server Name} File Browser
       - Branding directory path: `/branding`
@@ -32,14 +33,26 @@ Prerequisites:
     - Chunked Uploads
       - Set to 75 MB
       - Number of retires... 5
+  - User default settings
+    - Scope: `.`
+    - Language: English
+    - Permissions:
+      - [ ] Administrator
+      - [X] Create files and directories
+      - [X] Delete files and directories
+      - [X] Download
+      - [X] Edit files
+      - [ ] Execute Commands
+      - [X] Rename or move files and directories
+      - [X] Share files
   - Command runner
     - Before Upload: `echo $USERNAME $FILE $SCOPE`
 - User Management
   - Username: *UserName*
-  - Password: Set
-  - Scope: `{Username}`
-  - Permissions:
-    - All checked except for **Administrator** and **Execute Commands**
+  - Password: *Password*
+  - Scope: Leave empty.
+  - [X] Create user home directory
+  - Permissions leave default.
 
 ## Automated Setup
 
