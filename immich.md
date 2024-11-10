@@ -4,11 +4,9 @@ This page covers the setup of Immich to deploy in my docker-compose stack(s). Th
 
 [Immich Site](https://immich.app/)
 
-This procedure has been **deprecated** and instead using [Photoprism](./photoprism) due to instability of Immich during testing.
-
 ## Automated
 
-Pending.
+Can follow the `immich-config.json` provided in Git.
 
 ## Manual Steps
 
@@ -51,67 +49,12 @@ Follow these steps if a config file is not provided.
   - [X] Album added
   - [X] Album updated
 
-### Administration Settings
+## Importing Photos
 
-- Select Settings
-  - Select "Job Settings"
-    - Set all concurrency threads to 1
+Use [Immich-Go](https://github.com/simulot/immich-go).
 
-### External Library Import
-
-[Immich Link](https://immich.app/docs/guides/external-library/)
-
-- Select Administration at the top-right
-- Select "External Libraries" in Settings
-- Select "Create Library"
-  - Allow Immich Admin to maintain ownership
-- Select three dots to the right of the "New External Library"
-  - Rename to appropriate name
-  - Select "Edit Import Paths"
-    - Enter `/external_photos`
-      - This matches immich's volume mounting in the docker-compose file
-  - Select "Scan Settings"
-    - Select "Add Exclusion Pattern"
-      - Enter `**/Raw/**` to exclude photos in folders named "Raw"
-      - Select "Save"
-  - Select "Scan New Library Files"
-- Select "Settings"
-  - Select "External Library"
-    - [X] "Watch filesystem"
-  - Select "Periodic Scanning"
-    - [X] "Enabled"
-    - Edit the cron to read `10 23 4,20 * *` # At 23:10 on day-of-month 4 and 20.
-  - Select "Logging"
-    - [X] Enabled
-    - Level: Log
-  - Select "Machine Learning Settings"
-    - [ ] "Enabled"
-  - Skip "Map & GPS Settings"
-  - Select "OAuth Authentication"
-    - [ ] Enable
-    - <details><summary>Authentik Setup</summary>
-
-      - [X] "Enable"
-      - Issuer URL:
-      - Client ID:
-      - Client Secret:
-      - Scope:
-      - Signing Algorithm:
-      - Storage Label Claim:
-      - Storage Quota Claim:
-      - Default Storage Quota (GiB): 0
-      - Button Text: Login with Adam's Authentik!
-      - [X] "Auto Register"
-      - [X] "Auto Launch"
-      - [ ] "Mobile Redirect URI Override"
-
-      </details>
-  - Select "Server Settings"
-    - Enter "External Domain": `https://subdomain.adamzvolanek.com`
-    - Enter "Welcome Message": Zvolanek Photo Backup
-  - Select "Trash Settings"
-    - [ ] "Enabled"
-  - Select "User Settings"
-    - Delete Delay: 14
-  - Select "Video Transcode Settings"
-    - [X] "HEVC" under "Video Codec"
+- On windows, downloaded the `immich-go_Windows_x86_64.zip`, extracted the zip.
+- Opened cmd and navigated to photo location.
+- Ran the following command in cmd. `C:\Users\<PATH>\immich-go_Windows_x86_64\immich-go -server=https://subdomain.adamzvolanek.com -key=<API_KEY> upload .`
+  - Note the uploading content is *relative*  in the same location. Hence the `.`
+  - Alternative: `C:\Users\<PATH>\immich-go_Windows_x86_64\immich-go -server=https://subdomain.adamzvolanek.com -key=<API_KEY> upload C:\path\to\photos`
