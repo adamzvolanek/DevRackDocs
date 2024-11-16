@@ -1,5 +1,3 @@
-# Updating Unraid
-
 Covering the process of updating my Unraid from 6.11.5 to 6.12.8.
 
 ## Steps

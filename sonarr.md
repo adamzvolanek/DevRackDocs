@@ -1,16 +1,8 @@
-# Sonarr v4
-
-This page covers the setup of sonarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
+This page covers the setup of sonarr v4 to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
 Reference TRaSH Guide's for [Sonarr](https://trash-guides.info/Sonarr/) for additional more in-depth documentation.
 
-## Automated
-
-Configuration file to be generated from 'blank' sonarr install and imported during compose or a part of local stack directory.
-
-In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configuration for both sonarr and radarr.
-
-## Manual Steps
+## Setup
 
 Follow these steps if a config file is not provided.
 
@@ -137,3 +129,9 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 ### Series --> Library Import
 
 Select the 'Start Import' button, select the `media\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
+
+## Automated
+
+Configuration file to be generated from 'blank' sonarr install and imported during compose or a part of local stack directory.
+
+In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configuration for both sonarr and radarr.

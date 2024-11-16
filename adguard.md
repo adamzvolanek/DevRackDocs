@@ -1,8 +1,6 @@
-# AdGuard
-
 This page covers the setup of [AdGuard](https://github.com/AdguardTeam/AdGuardHome/wiki/Docker) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/core/adguard.yaml) docker-compose stack(s).
 
-## Manual Steps
+## Setup
 
 Navigate to <ADGUARD_IP>:3000 to view the install page. Select "Get Started".
 

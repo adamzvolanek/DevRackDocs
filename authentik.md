@@ -2,7 +2,9 @@
 
 This page covers the setup of Authenitk to deploy in my docker-compose stack(s).
 
-## Manual Steps
+**Authentik is no longer deployed.**
+
+## Setup
 
 Setup your admin user and upon starting Authentik, enter the 'Admin' interface and select "Applications".
 

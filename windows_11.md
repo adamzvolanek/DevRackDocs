@@ -1,12 +1,10 @@
-# Windows 11
-
 This page covers the manual setup of Windows 11 for my personal use.
 
 ## Quick-Links
 
 - [System File Checker](https://winbindex.m417z.com/)
 
-## Manual Setup
+## Setup
 
 If setup via Microsoft Account, create an additional **local** user with the name "Adam". Run through sign-in process again. Sign into Microsoft account this time.
 

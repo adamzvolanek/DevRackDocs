@@ -1,14 +1,12 @@
-# Memos
-
 This page covers the setup of [memos](https://www.usememos.com/).
 
-## Manual Steps
+# Setup
 
-### Administration
+## Administration
 
 Initial splash page includes the sign-up page for the memo-admin account.
 
-#### Settings
+### Settings
 
 - Select Settings and System
   - Under Basic and click "Edit"
@@ -32,6 +30,6 @@ Initial splash page includes the sign-up page for the memo-admin account.
 - Member
   - Create new users ad needed with appropriate user/admin roles.
 
-## Automated
+# Automated
 
 Put in as many environment variables to reduce manual setup.

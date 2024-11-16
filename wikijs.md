@@ -1,5 +1,3 @@
-# WikiJS
-
 While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender, I am using WikiJS going forward due to GitHub integration.
 
 ## Prerequisite
@@ -41,7 +39,7 @@ The repository is setup as a flat file repository to allow for WikiJS to best (i
 
 ### Search Engine
 
-Modify to use 'Databse - PostgreSQL'.
+Modify to use 'Database - PostgreSQL'.
 
 ## Tips
 

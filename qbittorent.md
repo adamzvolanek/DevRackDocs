@@ -1,10 +1,8 @@
-# qBittorrent
-
 This page covers the setup of [qBittorrent](https://github.com/binhex/arch-qbittorrentvpn) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/sparrow/qBittorrent.yaml) docker-compose stack(s).
 
 Note, qBittorrent and [delugeVPN](https://github.com/binhex/arch-delugevpn) cannot run simultaneously. Not seeing port conflict, cause unknown.
 
-## Manual Steps
+## Setup
 
 Create the docker compose stack following the [instructions](./installs#creating-a-docker-compose-stack) on the Installs page. Select "Compose Up" and allow docker-compose to pull down the docker image.
 

@@ -1,8 +1,4 @@
-# BookStack
-
 This page covers the setup of BookStack to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
-
-Currently my primary page is using [WikiJS](./wikijs) due to its ability to leverage Git on the backend. However a BookStack version of my page can be viewed at [docs.adamzvolanek.com](https://docs.adamzvolanek.com).
 
 ## Upon Start
 
@@ -61,7 +57,3 @@ Proposed structure of Alexandria BookStack:
 | DevRack   | Windows           | Various Windows Related Pages     | Various Docker Stacks    |
 | DevRack   | Unraid            | Various Unraid Related Pages      |                          |
 | About Me  | Adam Zvolanek     | Various Pages                     |                          |
-
-## Automated
-
-Configuration likely to be sourced from skeleton structure of BookStack's database.

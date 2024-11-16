@@ -1,8 +1,6 @@
-# Paperless-ngx
-
 This page covers the setup of [paperless-ngx](https://docs.paperless-ngx.com/).
 
-## Manual Steps
+## Setup
 
 ### Administration
 

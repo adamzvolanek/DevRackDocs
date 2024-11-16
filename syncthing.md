@@ -1,12 +1,10 @@
-# Syncthing
-
 This page covers the setup of [syncthing](https://github.com/linuxserver/docker-syncthing) to deploy in my docker-compose stack(s). Syncthing is setup as a (conceptually) different approach to a "cloud" server, replacing NextCloud in favor for local storage.
 
 Syncthing can be deployed on mobile phones and laptops.
 
-## Manual Steps
+# Setup
 
-### Settings
+## Settings
 
 Navigate to the Actions at the top right and select "Settings".
 
@@ -29,7 +27,7 @@ Navigate to the Actions at the top right and select "Settings".
 
 These steps need to be repeated for each new device added.
 
-## Adding Folder(s)
+### Adding Folder(s)
 
 On the main page, select "Add Folder".
 
@@ -41,7 +39,7 @@ Under the General tab add the following:
   - (If on Windows) Folder Path: `C:\Syncthing\`(Folder Name)
 - Select "Save"
 
-## Connecting Devices
+### Connecting Devices
 
 Select Actions and then "Show ID". Copy the ID Hash to use on Device. Local Discovery may show other devices if adding a n+1 device.
 

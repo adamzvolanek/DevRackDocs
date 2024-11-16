@@ -1,8 +1,6 @@
-# Uptime Kuma
-
 This page covers the setup of [Uptime-Kuma](https://uptime.kuma.pet/) in my docker-compose cloud stack.
 
-## Manual Steps
+## Setup
 
 ### Account Setup
 
@@ -28,7 +26,3 @@ You are welcome to setup Notifications, I setup an email SMTP relay using the fo
 - To Email: <Email to be sent to>
 
 At the bottom you can toggle the email SMTP to be the default notification method along with appliying to all existing monitors. Applying it to all existing monitors will also add it to groups **and** individual monitors.
-
-## Automatic Setup
-
-Pending.

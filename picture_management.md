@@ -1,5 +1,3 @@
-# Picture Management
-
 This page covers how I am currently handling "merging" pictures between my Sony mirrorless camera(s) and personal phone (Pixel 7). Images from the phone are downloaded from dedicated (and shared) Google Photos albums.
 
 ## Automated
@@ -33,7 +31,7 @@ On Unraid:
 
 - If the temporary, source, and destination directories are not provided as arguments, it prompts the user for input; the script also performs validation of paths existing prior to executing. It then generates a list of files in the temporary directory to loop over generating symlinks from the source directory to the destination directory. A touch command is run to preserve file modification time and the output is shown to the user.
 
-## Manual Steps
+## Setup
 
 - Start [Krusader](./unraid#once-booted).
 - Once started navigate to `/mnt/user/pictures/...` on one side of the navigation tree, and navigate to `/mnt/user/backups/...` on the other side.

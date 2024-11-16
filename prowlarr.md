@@ -1,14 +1,8 @@
-# Prowlarr
-
 This page covers the setup of Prowlarr to deploy in my docker-compose stack(s). Likewise some investigation of configuration files to track and have deployable configuration on compose up.
 
 Reference TRaSH Guide's for [Prowlarr](https://trash-guides.info/Prowlarr/) for additional more in-depth documentation.
 
-## Automated
-
-Pending.
-
-## Manual Steps
+## Setup
 
 Follow these steps if a config file is not provided.
 

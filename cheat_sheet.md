@@ -1,4 +1,4 @@
-# Cheat Sheet of Useful Commands
+Useful commands.
 
 ## docker-compose
 

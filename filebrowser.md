@@ -1,8 +1,6 @@
-# FileBrowser
-
 This page covers the setup of [filebrowser](https://github.com/filebrowser/filebrowser) to deploy in [my](https://github.com/adamzvolanek/DevRack/tree/main/docker-compose/cloud/filebrowser) filebrowser directory.
 
-## Manual Steps
+## Setup
 
 Prerequisites:
 

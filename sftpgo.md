@@ -2,7 +2,7 @@
 
 This page covers the setup of [SFTPGO](https://sftpgo.com/) to deploy in my docker-compose cloud stack.
 
-## Manual Steps
+## Setup
 
 Create the admin account and populate the account credentials. You can setup 2FA at a later point.
 

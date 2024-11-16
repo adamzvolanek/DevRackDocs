@@ -1,16 +1,14 @@
-# PingVin Share
-
 This page covers the configuration of the [PingVin-Share](https://github.com/stonith404/pingvin-share) as an upload and download file-sharing application.
 
-## Manual Setup
+# Setup
 
 Steps here cover the manual configuration of the PingVin-Share application.
 
-### Pre-Docker Steps
+## Pre-Docker Steps
 
 Monitor [this link](https://github.com/stonith404/pingvin-share/issues/137#issuecomment-2124844225).
 
-### Configuration
+## Configuration
 
 Select "Get started" and enter the following fields:
 
@@ -98,20 +96,20 @@ Select "Social Login".
 
 Leave the remainder of login options empty.
 
-### Accounts
+## Accounts
 
-#### TOTP
+### TOTP
 
 Select "My Account" at the top-right, scroll to Security section.
 
 Enter *Admin account password* to enable TOTP. Follow steps to continue TOTP setup.
 
-#### User Account
+### User Account
 
 As admin, select "Administration" at the top-right and then "User Management". Click "Create" at top-right and provide Username and Email.
 
 Email recipient will automatically receive a password. To update, select "My Account" at the top-right, scroll to Password section.
 
-### Authentik Setup
+## Authentik Setup
 
 https://www.reddit.com/r/Authentik/comments/1c8tz5g/pingvin_share_with_authentik/

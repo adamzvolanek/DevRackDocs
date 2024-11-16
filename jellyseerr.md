@@ -1,8 +1,6 @@
-# Jellyseerr
-
 This page covers the setup of [Jellyseer](https://github.com/Fallenbagel/jellyseerr) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/external/jellyseerr.yaml) docker-compose stack(s).
 
-## Manual Steps
+# Setup
 
 Prerequisites:
 
@@ -10,7 +8,7 @@ Prerequisites:
 - Radarr instance running and configured per [radarr](./radarr)
 - Sonarr instance running and configured per [sonarr](./sonarr)
 
-### Initial Setup Connect to JellyFin
+## Initial Setup Connect to JellyFin
 
 On connecting to docker container, select the "Use your Jellyfin account", and input your Jellyfin's information:
 
@@ -20,13 +18,15 @@ On connecting to docker container, select the "Use your Jellyfin account", and i
   - Utilize a JellyFin admin account username here on creation
 - "Password" : `JellyFin Admin Password`
 
-### Initial Setup Jellyseerr
+## Initial Setup Jellyseerr
 
 On step 2 of "Configure Media Server" click on "Sync Libraries" and select your applicable libraries. Upon selecting the libraries select "Next".
 
-### Initial Setup Services
+## Initial Setup Services
 
-#### Radarr
+### Arrs
+
+**Radarr**
 
 For Radarr configuration select "Add Radarr Server". Treat the "Default Server" as the [Standard](./radarr#quality-profiles) quality profile.
 
@@ -102,11 +102,11 @@ For Sonarr configuration select "Add Sonarr Server". Treat the "Default Server" 
 - "Enable Automated Search" : Check
 - "Tag Requests" : Check
 
-### Settings
+## Settings
 
 These settings are available after initial configuration. They can be found by navigating to `<jellyseer_instance/settings/main>`.
 
-#### General
+### General
 
 - "Application URL" : Populate with instance URL if desired, `subdomain.domain.tld`
 - "Enable Proxy Support" : Check
@@ -118,7 +118,7 @@ These settings are available after initial configuration. They can be found by n
 - "Hide Available Media" : Unchecked
 - "Allow Partial Series Requests" : Check
 
-#### Users
+### Users
 
 This view depends on the user currently logged in, instructions are written under the assumption you are logged in as the Jellyseer admin.
 
@@ -154,18 +154,18 @@ This view depends on the user currently logged in, instructions are written unde
 
 </details>
 
-#### Emby
+### Emby
 
 See [above](#initial-setup-connect-to-jellyfin) additional Emby Settings.
 
 - "Internal URL" : `<subdomain.domain.tld>` (External JellyFin URL)
 - "External URL" : `<subdomain.domain.tld>` (External JellyFin URL)
 
-#### Services
+### Services
 
 See [above](#initial-setup-services)
 
-#### Notifications
+### Notifications
 
 - "Enable Agent" : Checked
 - "Required user email" : Unchecked
@@ -179,13 +179,9 @@ See [above](#initial-setup-services)
 - "SMTP Username" : Your email
 - "SMTP Password" : [SMTP Password](./unraid#creating-gmail-smtp-relay)
 
-#### Jobs & Cache
+### Jobs & Cache
 
 Verify job execution times do not overlap with UnRaids [backup schedule](./tools#dynamix-schedules)
-
-## Automated Install
-
-Jellyseerr does not include any automated install methods out of the box.
 
 ## Tips & Fixes
 

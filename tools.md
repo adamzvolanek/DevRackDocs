@@ -1,5 +1,3 @@
-# Tools
-
 This page covers the setup of tools & plugins used on the Alexandria (Unraid) server.
 
 ## Plugins

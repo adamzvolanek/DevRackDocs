@@ -1,6 +1,6 @@
 This page covers the setup of [crowdsec](https://www.crowdsec.net/) to deploy in my docker-compose stack(s).
 
-## Manual Steps
+## Setup
 
 - Setup the docker compose stack in Unraid.
 - Paste the current `crowdsec-npm.yaml` contents.

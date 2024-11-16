@@ -1,14 +1,8 @@
-# Immich
-
 This page covers the setup of Immich to deploy in my docker-compose stack(s). The Immich instance will be a private (family) photo library.
 
 [Immich Site](https://immich.app/)
 
-## Automated
-
-Can follow the `immich-config.json` provided in Git.
-
-## Manual Steps
+## Setup
 
 Follow these steps if a config file is not provided.
 
@@ -58,3 +52,7 @@ Use [Immich-Go](https://github.com/simulot/immich-go).
 - Ran the following command in cmd. `C:\Users\<PATH>\immich-go_Windows_x86_64\immich-go -server=https://subdomain.adamzvolanek.com -key=<API_KEY> upload .`
   - Note the uploading content is *relative*  in the same location. Hence the `.`
   - Alternative: `C:\Users\<PATH>\immich-go_Windows_x86_64\immich-go -server=https://subdomain.adamzvolanek.com -key=<API_KEY> upload C:\path\to\photos`
+
+## Automated
+
+Can follow the `immich-config.json` provided in Git.
