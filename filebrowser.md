@@ -20,7 +20,7 @@ Prerequisites:
     - Change Password
       - Update your admin user password.
   - Global Settings
-    - [X] Allow users to signup
+    - [ ] Allow users to signup
     - [X] Auto create user home dir while adding new user
     - Base path for user home directories: `cloud/`
       - This reason for `cloud/` is due to the settings.json file including the root directory as `/unraid` already.
