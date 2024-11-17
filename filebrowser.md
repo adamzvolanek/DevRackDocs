@@ -22,8 +22,8 @@ Prerequisites:
   - Global Settings
     - [ ] Allow users to signup
     - [X] Auto create user home dir while adding new user
-    - Base path for user home directories: `cloud/`
-      - This reason for `cloud/` is due to the settings.json file including the root directory as `/unraid` already.
+    - Base path for user home directories: `/`
+      - This reason for `/` is due to the settings.json file including the root directory as `/cloud` already.
     - Branding
       - Instance name: {Server Name} File Browser
       - Branding directory path: `/branding`
@@ -51,6 +51,8 @@ Prerequisites:
   - Scope: Leave empty.
   - [X] Create user home directory
   - Permissions leave default.
+
+It is expected for users' Scope to be listed as `/*username*`.
 
 ## Automated Setup
 
