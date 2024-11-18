@@ -37,4 +37,7 @@ Create the admin account and populate the account credentials. You can setup 2FA
     - Maximum shares expiration: 0
     - Description: Full name.
   - ACLs
+    - Permissions: `*`
+      - Per-directory permissions: `/cloud/username`, `*`
+    - Denied protocols: `SSH`, `FTP`, `DAV`
     - Require 2FA for: HTTP, SSH, FTP
