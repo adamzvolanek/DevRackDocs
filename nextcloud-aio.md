@@ -2,17 +2,13 @@
 
 This page covers the setup of [NextCloud AIO](https://github.com/nextcloud/all-in-one) to deploy in my docker-compose cloud stack.
 
-This procedure has been **deprecated** and instead using [NextCloud](./cloud).
-
 ## Setup
 
-Steps taken from [here](https://myunraid-ru.translate.goog/nextcloud-aio/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)
+Steps taken from [here](https://www.youtube.com/watch?v=U47nvwXrAOo)
 
 ### WebUI
 
-Navigate to `https://${SERVER_IP}:8089/`. The 8089 port should be what is listed on [line 16](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud-aio/cloud-aio.yaml).
-
-The initial window will show the authorization password of the NextCloud AIO master container. Save the password somewhere locally. Select "Open Nextcloud AIO Login" and paste the received password into the login form and click "Login".
+Navigate to nextcloud-aio webUI via Unraid.
 
 ### Domain
 
@@ -33,3 +29,16 @@ Select "Start containers".
 After launch (depending on the selection of components), the downloading and deployment process itself will begin, it will take some time.
 
 Once installed page will show the nextcloud username: `admin` and password to use. Click "Open your Nextcloud". Login using previously mentioned credentials.
+
+## Configuration Updates
+
+### App Removal
+
+- Calendar
+- Contacts
+- Tasks
+- Notes
+
+### Chunked Uploads
+
+Run `sudo docker exec --user www-data -it nextcloud-aio-nextcloud php occ config:app:set files max_chunk_size --value 52428800` to set it to 50 MB upload chunks.
