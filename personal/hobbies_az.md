@@ -10,16 +10,16 @@ I enjoy working out, playing sports, and staying in shape. It it keeps me physic
 
 ## Photography
 
-I have not had a persistent and reliable portfolio for others to view, currently the best way to view my work is via [Instagram](https://www.instagram.com/zvolanek.photography/). I currently use two Sony A6600's with a myriad of lenses,
+I have not had a persistent and reliable portfolio for others to view, currently the best way to view my work is via [Instagram](https://www.instagram.com/zvolanek.photography/). I currently use a Sony A6700 and A6600 with a myriad of lenses,
 
-- Sigma 16mm f/1.4
+- Sony 15mm f/1.4
 - Sony 18-135mm f/3.5-5.6
 - Sigma 56mm f/1.4
 - Sony 70-350mm f/4.3-6.3
 
 ## Motorcycle
 
-I have been riding motorcycles since I was 15 years old however have since hung up the keys in 2024. For a quick backstory, I started on a red 2012 Honda CBR-250 and transitioned to a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home. I bought a 2020 Triumph Trident 660 which I told in 2024.
+I have been riding motorcycles since I was 15 years old however have since hung up the keys in 2024. For a quick backstory, I started on a red 2012 Honda CBR-250 and transitioned to a 2013 Suzuki SFV650 Gladius in 2015. I sold the Gladius (2013) in 2021 to aid as down payment for purchasing a home. I bought a 2020 Triumph Trident 660 which I sold in 2024.
 
 ## DND
 

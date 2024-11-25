@@ -12,17 +12,19 @@ Can have mulitple paths per repository.
 - Disable authentication
   - Local only tool
 
+BackBlaze B2 bucket should be named, `restic-shareName-serverName-serverOS-region`.
+
 ### Repository Setup
 
-Verify B2 bucket has the following setup:
+Verify a B2 bucket has the following setup:
 
 - Lifecycle: "Keep only the last version of the file".
 - Backblaze Account ID and Account Key generated using [these](https://www.backblaze.com/docs/cloud-storage-s3-compatible-api) instructions.
 
 - Repo Name: `function-shareName`
   - e.g. restic-backups
-- Repo URI: `s3:Endpoint/bucketName`
-  - e.g. `s3:s3.us-region-00#.backblazeb2.com/BUCKET_NAME`
+- Repo URI: `b2:bucketName`
+- Enter password to encrypt upload: `password`
 - Environment Variables:
   - B2_ACCOUNT_ID=someAccountValue
   - B2_ACCOUNT_KEY=someKeyValue
