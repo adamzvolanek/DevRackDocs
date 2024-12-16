@@ -54,6 +54,8 @@ Open the Unraid terminal and type `docker network create {DOCKER_NETWORK}`. Repl
 
 Install docker-compose by going into Apps and searching 'docker compose'. Once installed, return to the docker tab and view the compose tab at the bottom of the page. Instructions for setting up docker-compose can be found [here](./installs#creating-a-docker-compose-stack)
 
+After installing Docker Compose, set the Compose Project Directory to the backup repo. e.g. `/mnt/user/share/repo/docker-compose-backups/alexandria`.
+
 ### Setting up Git
 
 Create a deploy key as part of the DevRack repository, `https://github.com/<profile>/<repository>/settings/keys`. Unraid support git out of the box.
