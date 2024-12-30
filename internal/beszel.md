@@ -32,3 +32,7 @@ Select the cog wheel and press "configure an SMTP server". Login to PocketBase w
 2. Check "Enable auto backups"
 3. Cron expression: `5 02 * * 6`
 4. Max @auto backups to keep: `3`
+
+### Setup of `local` notifications
+
+1. Select the bell icon along the `local` system.
