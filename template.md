@@ -1,5 +1,3 @@
-# Title of Page
-
 Description/Summary of page.
 
 ## Section 1
