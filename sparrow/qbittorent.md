@@ -25,6 +25,6 @@ Start the stack again by selecting "Compose Up" and allow container to load. You
 
 ### QBitTorrent Configuration File
 
-Bring qbittorrent down again and import the following [qBittorrent.conf]() file into `sparrow\qbittorrentvpn\config\qBittorrent\config\`. It should loosely follow the [basic setup](https://trash-guides.info/Downloaders/qBittorrent/Basic-Setup/). Likewise import the `categories.json` to `sparrow\qbittorrentvpn\config\qBittorrent\config\`.
+Bring qbittorrent down again and import the following `qBittorrent.conf` file into `sparrow\qbittorrentvpn\config\qBittorrent\config\`. It should loosely follow the [basic setup](https://trash-guides.info/Downloaders/qBittorrent/Basic-Setup/). Likewise import the `categories.json` to `sparrow\qbittorrentvpn\config\qBittorrent\config\`.
 
 Continue with setting up Sonarr and Radarr following the respective docs: [sonarr](./sonarr) and [radarr](./radarr).
