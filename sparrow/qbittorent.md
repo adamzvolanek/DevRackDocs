@@ -1,4 +1,4 @@
-This page covers the setup of [qBittorrent](https://github.com/binhex/arch-qbittorrentvpn) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/sparrow/qBittorrent.yaml) docker-compose stack(s).
+This page covers the setup of [qBittorrent](https://github.com/binhex/arch-qbittorrentvpn) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/sparrow/qbittorrentvpn.yaml) docker-compose stack(s).
 
 Note, qBittorrent and [delugeVPN](https://github.com/binhex/arch-delugevpn) cannot run simultaneously. Not seeing port conflict, cause unknown.
 
@@ -10,7 +10,7 @@ It is expected for qBittorrent to fail on first run due to missing openVPN files
 
 ### Populate the openvpn Directory
 
-In the qbittorrent config volume (`binhex-qbittorrentvpn/openvpn/`) add VPNs OpenVPN configuration files.
+In the qbittorrent config volume (`qbittorrentvpn\config\openvpn`) add VPNs OpenVPN configuration files.
 
 - Certificate file (`ca....crt`)
 - OVPN file (`*.ovpn`) for the region to be used
@@ -23,20 +23,8 @@ Start the stack again by selecting "Compose Up" and allow container to load. You
 [info] qBittorrent process listening on port <WEBUI_PORT>
 ```
 
-### Temporarily Add Default WebGUI Password
+### QBitTorrent Configuration File
 
-Stop the container by selecting "Compose Down". Edit the following file, `...\binhex-qbittorrentvpn\qBittorrent\config\qBitorrent.conf` and add the following line below preferences.
-
-```md
-[Preferences]
-...
-WebUI\Password_PBKDF2="@ByteArray(ARQ77eY1NUZaQsuDHbIMCA==:0WMRkYTUWVT9wVvdDtHAjU9b3b7uB8NR1Gur2hmQCvCDpm39Q+PsJRJPaCU51dEiz+dTzh8qbPsL8WkFljQYFQ==)"
-```
-
-### Initial Setup of qBittorrent
-
-The default login for qBittorrent can be found to [here](https://github.com/binhex/arch-qbittorrentvpn/blob/master/README.md?plain=1#L59); `admin` and `adminadmin`.
-
-Pending further instructions, notes for later: https://trash-guides.info/Downloaders/qBittorrent/Basic-Setup/
+Bring qbittorrent down again and import the following [qBittorrent.conf]() file into `sparrow\qbittorrentvpn\config\qBittorrent\config\`. It should loosely follow the [basic setup](https://trash-guides.info/Downloaders/qBittorrent/Basic-Setup/). Likewise import the `categories.json` to `sparrow\qbittorrentvpn\config\qBittorrent\config\`.
 
 Continue with setting up Sonarr and Radarr following the respective docs: [sonarr](./sonarr) and [radarr](./radarr).
