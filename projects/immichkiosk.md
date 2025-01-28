@@ -4,32 +4,25 @@ Recall, SHIFT+INSERT allows paste into PuTTY via VIM.
 
 ## Raspberry Pi Zero 2 W Setup
 
+### Downloads
+
 1. Download [DietPi](https://dietpi.com/#download).
 2. Download [etcher](https://etcher.balena.io/).
-3. Extract DietPi OS whence downloaded.
-4. Load to microSD card via Etcher.
-5. Re-mount the microSD card and edit `dietpi-wifi.txt` and `dietpi.txt`
+
+### Pre-Boot Setup
+
+1. Extract DietPi OS whence downloaded.
+2. Load to microSD card via Etcher.
+3. Re-mount the microSD card and edit `dietpi-wifi.txt`.
    1. In dietpi-wifi.txt enter WIFI_SSID and WIFI_KEY. e.g.
       1. `WIFI_SSID`='Name of SSID'
       2. `WIFI_KEY[0]`='Password of SSID'
-   2. In dietpi.txt edit the following:
-      1. `AUTO_SETUP_TIMEZONE`=`America/Chicago`
-      2. `AUTO_SETUP_NET_ETHERNET`=`0`
-      3. `AUTO_SETUP_NET_WIFI`=`1`
-      4. `AUTO_SETUP_NET_HOSTNAME`=`ImmichKiosk-DietPi`
-      5. `CONFIG_ENABLE_IPV6`=`0`
-      6. `SOFTWARE_DISABLE_SSH_PASSWORD_LOGINS`=`0`
-
-### Once Booted
-
-1. Verify IP address of the DietPI PC and SSH in as root. Enter default password `dietpi`.
-2. Select Chromium and VIM software to be installed.
-3. Reboot using `init 6`.
+4. Replace the `dietpi.txt` with the following file: [Broken Link]()
 
 ### Immich Kiosk Install and Setup
 
-1. Login as root and navigate to home directory, `cd ~`.
-2. Create immich folder, `mkdir immichkiosk`.
+1. Login as dietpi and navigate to home directory, `cd ~`.
+2. Create immichkiosk folder, `mkdir immichkiosk`.
 3. Download the example config file, `wget -O immichkiosk/config.yaml https://raw.githubusercontent.com/damongolding/immich-kiosk/refs/heads/main/config.example.yaml`.
 4. Download the Linux arm64 package, `wget -O immich-kiosk_Linux_arm64.tar.gz https://github.com/damongolding/immich-kiosk/releases/download/v0.15.1/immich-kiosk_Linux_arm64.tar.gz`.
 5. Unpack the archive, `tar -zxvf immich-kiosk_Linux_arm64.tar.gz`.
@@ -37,43 +30,43 @@ Recall, SHIFT+INSERT allows paste into PuTTY via VIM.
     1. `immich_api_key` with a dedicated API key from respective Immich account
     2. `immich_url` with Immich server web address.
     3. `album` with the album ID. e.g. 12345678-1234-1234-1234-12345678
-    4. More items coming.
 
 ## AutoStart Setup
 
+Section covers the auto start configuration of Immich Kiosk.
+
 ### Immich Kiosk System Service
 
-1. Enter `dietpi-autostart` and select Option 11.
-   1. Enter the local URL and port
-2. Navigate to system services, `cd /etc/systemd/system`
-3. Create immich-kiosk service, `touch immich-kiosk.service`
-4. Populate with the following:
+1. Navigate to system services, `cd /etc/systemd/system`
+2. Create immich-kiosk service, `sudo touch immich-kiosk.service`
+3. Populate with the following:
    1.  
 
-        [Unit]
-        Description=Immich Kiosk
-        After=network.target
-        StartLimitIntervalSec=0
+       [Unit]
+       Description=Immich Kiosk
+       After=network.target
+       StartLimitIntervalSec=0
 
-        [Service]
-        Type=simple
-        Restart=always
-        RestartSec=1
-        User={your_user}
-        WorkingDirectory=/home/{your_user}/immichkiosk
-        ExecStart=/home/{your_user}/immichkiosk/immich-kiosk
+       [Service]
+       Type=simple
+       Restart=always
+       RestartSec=1
+       User=dietpi
+       WorkingDirectory=/home/dietpi/immichkiosk
+       ExecStart=/home/dietpi/immichkiosk/immich-kiosk
 
        [Install]
        WantedBy=multi-user.target
-5. Enable and auto-start the service using the following:
-   1. `systemctl daemon-reload`
-   2. `systemctl enable immich-kiosk`
-   3. `systemctl start immich-kiosk`
+
+4. Enable and auto-start the service using the following:
+   1. `sudo systemctl daemon-reload`
+   2. `sudo systemctl enable immich-kiosk`
+   3. `sudo systemctl start immich-kiosk`
 
 ### DietPi Kiosk Mode
 
 1. Navigate to here, `cd /var/lib/dietpi/dietpi-software/installed/`
-2. Modify the chromium-autostart.sh file with the example below:
+2. Modify the `chromium-autostart.sh` file with the example below:
    1.  
 
         #!/bin/dash
@@ -112,9 +105,11 @@ Recall, SHIFT+INSERT allows paste into PuTTY via VIM.
         STARTX='xinit'
         [ "$USER" = 'root' ] || STARTX='startx'
 
-        exec "$STARTX" /tmp/xinitrc.tmp "$FP_CHROMIUM" $CHROMIUM_OPTS "${URL:-https://dietpi.com/}"
+        exec "$STARTX" /tmp/xinitrc.tmp "$FP_CHROMIUM" $CHROMIUM_OPTS "${URL:-https://localhost:3000}"
 
 # Potentially Fully Scripted Upon Boot
+
+<details><summary>Draft Script</summary>
 
 ```bash
 #!/bin/bash
@@ -173,3 +168,5 @@ sed -i 's|^CHROMIUM_OPTS="|CHROMIUM_OPTS="--no-memcheck |' /var/lib/dietpi/dietp
 
 echo "Installation and setup complete!"
 ```
+
+</details>
