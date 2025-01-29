@@ -18,13 +18,23 @@ Recall, SHIFT+INSERT allows paste into PuTTY via VIM.
       1. `WIFI_SSID`='Name of SSID'
       2. `WIFI_KEY[0]`='Password of SSID'
 4. Replace the `dietpi.txt` with the following file: [Broken Link]()
-5. Download the [Automation_Custom_Script.sh]() script to your desktop
+5. **If on windows skip to step 8!** <br/> Download the [Automation_Custom_Script.sh]() script to your desktop
 6. Edit the immich values
     1. `immich_api_key` with a dedicated API key from respective Immich account
     2. `immich_url` with Immich server web address.
     3. `album` with the album ID. e.g. 12345678-1234-1234-1234-12345678
 7. Paste the `Automation_Custom_Script.sh` into the /boot (ext4 format) partition of the microSD card.
-8. Boot PI
+   1. Does not work on Windows.
+8. **Continue only if `Automation_Custom_Script` was not utilized** <br/> Boot
+   1. Monitor assigned IP via DHCP
+9. Login as dietpi to PI via SSH.
+10. Type, `cd /home/dietpi/`
+11. Type, `touch setup_script.sh`
+12. Type, `nano setup_script.sh`
+13. Paste in contents of [Automation_Custom_Script.sh]()
+14. Return to Step 6 via nano directly on PI.
+15. Type, `sudo sh setup_script.sh` to run the script.
+16. Type, `sudo init 6`.
 
 ### Immich Kiosk Install and Setup
 
