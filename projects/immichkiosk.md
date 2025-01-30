@@ -2,6 +2,25 @@ Immich Kiosk Setup
 
 ## Using Raspberry Pi Zero 2 W
 
+Overall a success apart from the lack of a touchscreen and an extra cable purchased that I didn't need. If I was to do it again, I would either purchase a larger PI or smaller/compatible display for the Pi Zero 2 W.
+
+Additionally, this is not the intended use for [ImmichKiosk](https://github.com/damongolding/immich-kiosk), however works as intended.
+
+### Purchases
+
+- Raspberry Pi Zero 2 W
+- 10.1 inch 1280x800 display [Amazon Link](https://www.amazon.com/dp/B0BPM9VTY6)
+  - Note: Touchscreen will not work without driver install. In-op for Raspberry Pi Zero 2 W.
+  - Comes with posts to screw Pi Zero 2 at two points.
+- [Micro USB to C](https://www.amazon.com/dp/B0746NHSCZ) for touchscreen, not used.
+- [Mini HDMI to HDMI Adapter](https://www.amazon.com/dp/B09MD23K4X)
+  - Would recommend a traditional mini-HDMI to HDMI cable over adapter cable combo.
+- [Short HDMI Cable](https://www.amazon.com/dp/B0B5KN6853)
+  - Would recommend buying shortest HDMI to mini-HDMI rather than adapter cable combo.
+- [Anker 2 Pack Dual Port Charger](https://www.amazon.com/Charger-Anker-Foldable-PowerPort-Samsung/dp/B07DFWKBF7)
+  - Powers both display and Pi Zero 2.
+- [Micro USB to USB](https://www.amazon.com/YOKIVE-Switch-Extension-Reduced-6-56-Feet/dp/B0BGSKFLS5) or something similar to power Raspberry PI.
+
 ### Downloads
 
 1. Download [DietPi](https://dietpi.com/#download).
