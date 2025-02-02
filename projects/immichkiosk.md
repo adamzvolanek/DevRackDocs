@@ -42,7 +42,7 @@ These are **untested**!
       1. `WIFI_SSID`='Name of SSID'
       2. `WIFI_KEY[0]`='Password of SSID'
 4. Replace the `dietpi.txt` with the following file: [dietpi.txt](https://github.com/adamzvolanek/DevRack/blob/main/immich-kiosk-project/dietpi.txt)
-5. **If on windows skip to step 8!** <br/> Download the [Automation_Custom_Script.sh](https://github.com/adamzvolanek/DevRack/blob/main/immich-kiosk-project/Automation_Custom_Script.sh) script to your desktop
+5. Download the [Automation_Custom_Script.sh](https://github.com/adamzvolanek/DevRack/blob/main/immich-kiosk-project/Automation_Custom_Script.sh) script to your desktop
 6. Edit the immich values
     1. `immich_api_key` with a dedicated API key from respective Immich account
     2. `immich_url` with Immich server web address.
