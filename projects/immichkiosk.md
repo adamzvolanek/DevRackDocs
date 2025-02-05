@@ -59,6 +59,7 @@ For each ImmichKiosk Picture Frame.
 1. Have user create an Album, populate with pictures.
 2. Have user share Album with the Immich Kiosk User.
 3. Login and navigate to album as Immich Kiosk User and note the UID after albums in the URL. This will be `album` for the Album_ID in the config.yaml file.
+   1. Alternatively, you can use Hoppscotch to GET the album ID using the `immich_api_key` by having the parameters set to key:`shared` and value: `true`.
 
 ### Steps for Windows
 
