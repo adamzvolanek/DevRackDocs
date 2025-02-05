@@ -26,6 +26,40 @@ Additionally, this is not the intended use for [ImmichKiosk](https://github.com/
 1. Download [DietPi](https://dietpi.com/#download).
 2. Download [etcher](https://etcher.balena.io/).
 
+### Immich Setup
+
+Implementation for each user can vary!
+
+1. Create Immich Kiosk User
+2. Create Immich Kiosk User API-Key via WebUI named `Get Read Only Key`.
+3. Generate Read-Only API key using Hoppscotch
+   1. Post: https://immich.url/api/api-keys
+   2. Authorization Tab
+      1. Key: X-API-Key
+      2. Value: `your_api_key`
+   3. Body Tab
+      1. JSON below:
+
+             {
+                "name": "Read-Only Key",
+                 "permissions": [
+                 "album.read"
+                ]
+             }
+   4. Copy the `secret` returned, this will become our `immich_api_key` populated in the `config.yaml`.
+4. Verify this works by running a GET in Hoppscotch
+   1. Authorization Tab
+      1. Key: X-API-Key
+      2. Value: `immich_api_key`
+   2. Response should return with a 200 status.
+5. Delete the `Get Read Only Key` from the Immich WebUI.
+
+For each ImmichKiosk Picture Frame.
+
+1. Have user create an Album, populate with pictures.
+2. Have user share Album with the Immich Kiosk User.
+3. Login and navigate to album as Immich Kiosk User and note the UID after albums in the URL. This will be `album` for the Album_ID in the config.yaml file.
+
 ### Steps for Windows
 
 1. Extract DietPi OS whence downloaded.
