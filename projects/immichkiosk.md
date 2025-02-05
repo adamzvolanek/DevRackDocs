@@ -42,8 +42,8 @@ Implementation for each user can vary!
 
              {
                 "name": "Read-Only Key",
-                 "permissions": [
-                 "album.read"
+                "permissions": [
+                "album.read"
                 ]
              }
    4. Copy the `secret` returned, this will become our `immich_api_key` populated in the `config.yaml`.
