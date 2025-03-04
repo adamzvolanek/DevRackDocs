@@ -1,18 +1,11 @@
-This page covers the setup of the offsite-backup PC.
+This page covers the setup of the offsite-backup server.
 
 ## Operating System
 
-Download and install the latest [Fedora Workstation OS](https://fedoraproject.org/workstation/download).
+Running a second Unraid Server.
 
 ## Basics
 
-- Install Ansible
-- Install Wireguard
-- Insatll NFS Server
-  - Setup Drive Mount locatoin
-- Install Docker
-
-### Ansible
-
-1. `sudo dnf install ansible`
-2. `sudo dnf install python3-libdnf5`
+- Install TailScale Plugin and create account.
+  - Connect both Alexandria and Offsite backup PC.
+    - Ping test to verify.
