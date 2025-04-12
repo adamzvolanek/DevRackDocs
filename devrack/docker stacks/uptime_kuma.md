@@ -66,3 +66,7 @@ Sections skipped are to be left blank.
    3. Duration: 120 (Minutes)
    4. Timezone: UTC-06:00
 6. Save
+
+### Networking Setup
+
+Leverage [CloudFlare ZeroTrust Tunnels](https://github.com/louislam/uptime-kuma/wiki/Reverse-Proxy-with-Cloudflare-Tunnel)
