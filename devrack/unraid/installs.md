@@ -6,6 +6,8 @@ Be sure to review the [writing standards](./writing_standards) to understand the
 
 Pre-requisite includes installing the docker compose plugin under the Community "Apps" tab.
 
+Once installed, update the Compose Project Directory in `Settings/compose.manager.settings` to a folder you'd like to save all your docker compose stacks. e.g. `/mnt/user/devrack/DevRack/docker-compose`.
+
 ## Creating a Docker Compose Stack
 
 Note, the dockers will not have their `appdata` directories created until initial startup. Create a docker-compose stack by selecting "Add New Stack" and provide a relevant `stack_name`. Populate the stack directory with corresponding directory to GitHub, e.g. cloud, external, etc.
