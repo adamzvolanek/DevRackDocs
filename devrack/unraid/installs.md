@@ -4,7 +4,7 @@ Be sure to review the [writing standards](./writing_standards) to understand the
 
 ## Setup Docker Compose on Unraid
 
-Pre-requisite includes installing [docker compose](./unraid#installing-docker-compose).
+Pre-requisite includes installing the docker compose plugin under the Community "Apps" tab.
 
 ## Creating a Docker Compose Stack
 

@@ -1,6 +1,6 @@
 # Description
 
-This repository consists of my homelab notes/documentation for deploying my server named Alexandria which can be accessed on my [wiki](http://wiki.adamzvolanek.com).
+This repository consists of my homelab notes/documentation for deploying my server named Alexandria which can be accessed on my [BookStack](http://docs.adamzvolanek.com).
 
 ## Important Note
 
