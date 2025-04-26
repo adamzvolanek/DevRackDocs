@@ -1,12 +1,8 @@
-Immich Kiosk Setup
-
 ## Using Raspberry Pi Zero 2 W
 
 Overall a success apart from the lack of a touchscreen and an extra cable purchased that I didn't need. If I was to do it again, I would either purchase a larger PI or smaller/compatible display for the Pi Zero 2 W.
 
-Additionally, this is not the intended use for [ImmichKiosk](https://github.com/damongolding/immich-kiosk), however works as intended.
-
-### Purchases
+### Purchases List and Notes
 
 - Raspberry Pi Zero 2 W
 - 10.1 inch 1280x800 display [Amazon Link](https://www.amazon.com/dp/B0BPM9VTY6)
@@ -25,6 +21,7 @@ Additionally, this is not the intended use for [ImmichKiosk](https://github.com/
 
 1. Download [DietPi](https://dietpi.com/#download).
 2. Download [etcher](https://etcher.balena.io/).
+3. Download [Hoppscotch](https://hoppscotch.io/)
 
 ### Immich Setup
 
@@ -103,3 +100,9 @@ These are **untested**!
     3. `album` with the album ID. e.g. 12345678-1234-1234-1234-12345678
 7. Paste the `Automation_Custom_Script.sh` into the /boot/ partition of the microSD card.
 8. Boot
+
+## Photos
+
+[![Front of the Digital Photo Frame](https://docs.adamzvolanek.com/uploads/images/gallery/2025-02/scaled-1680-/epf0vZFEU8j0XD0C-pxl-20250205-023059383.jpg)](https://docs.adamzvolanek.com/uploads/images/gallery/2025-02/epf0vZFEU8j0XD0C-pxl-20250205-023059383.jpg)
+
+[![Rear of the Digital Photo Frame](https://docs.adamzvolanek.com/uploads/images/gallery/2025-02/scaled-1680-/dp3HZIy5ZVwGBLr1-pxl-20250205-022739548.jpg)](https://docs.adamzvolanek.com/uploads/images/gallery/2025-02/dp3HZIy5ZVwGBLr1-pxl-20250205-022739548.jpg)
