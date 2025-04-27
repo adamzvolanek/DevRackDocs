@@ -130,6 +130,30 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
 Select the 'Start Import' button, select the `media\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
 
+### Notifications
+
+Navigate to Sonarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Grab
+  - [ ] On File Import
+  - [X] On File Upgrade
+  - [X] On Import Complete
+  - [ ] On Rename
+  - [X] On Series Add
+  - [X] On Series Delete
+  - [X] On Episode File Delete
+  - [X] On Episode File Delete For Upgrade
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+  - [ ] On Manual Interaction Required
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Sonarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/sonarr.webp`
+
 ## Automated
 
 Configuration file to be generated from 'blank' sonarr install and imported during compose or a part of local stack directory.

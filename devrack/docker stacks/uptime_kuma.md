@@ -23,17 +23,23 @@ Sections skipped are to be left blank.
       - [X] Status Page - Alexandria
    3. Select save.
 2. Notifications
-   1. Setup Notifications
-      - Notification Type: Email (SMTP)
-      - Friendly Name: <Fillout appropriately>
-      - Hostname: smtp.domain.tld
-      - Port: 465
-      - Security: TLS (465)
-      - SMTP username: Your email address
-      - SMTP password: Application specific email password
-      - From email: Must match SMTP username
-      - To Email: <Email to be sent to>
-      - Custom Subject: Leave blank
+   - Setup Notifications
+      1. Notification Type: Email (SMTP)
+          - Friendly Name: <Fillout appropriately>
+          - Hostname: smtp.domain.tld
+          - Port: 465
+          - Security: TLS (465)
+          - SMTP username: Your email address
+          - SMTP password: Application specific email password
+          - From email: Must match SMTP username
+          - To Email: <Email to be sent to>
+          - Custom Subject: Leave blank
+      2. Notification Type: Discord
+       - Friendly Name: Alexandria Discord
+       - Discord Webhook URL: https://discord.com/api/webhooks/...
+       - Bot Display Name: `Alexandria Kuma`
+       - Prefix Custom Message: Leave default.
+       - Select 'Test' than 'Save'.
 3. Reverse Proxy
    1. If using Cloudflare Tunnel, setup accordingly.
 4. Security

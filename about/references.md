@@ -1,5 +1,3 @@
-# References
-
 A page to outline great links and resources used throughout Alexandria but your own self-hosting journey.
 
 ## Hotio's Dockers

@@ -60,3 +60,19 @@ Repeat for additional indexers.
 - Select the wrench icon
 - Scroll towards the bottom of the indexer's Tags and add the tag used for flaresolverr above. e.g. `flaresolverr`
 - Click "Test" and "Save"
+
+### Notifications
+
+Navigate to Prowlarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Release Grab
+  - [ ] Include Manual Grabs made within Prowlarr
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Prowlarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/prowlarr.webp`

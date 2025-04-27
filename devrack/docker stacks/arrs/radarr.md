@@ -159,6 +159,28 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
 Select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.
 
+### Notifications
+
+Navigate to Radarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Grab
+  - [ ] On File Import
+  - [ ] On Rename
+  - [X] On Series Add
+  - [X] On Series Delete
+  - [X] On Episode File Delete
+  - [X] On Episode File Delete For Upgrade
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+  - [ ] On Manual Interaction Required
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Radarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/radarr.webp`
+
 ## Automated
 
 Configuration file to be generated from 'blank' radarr install and imported during compose or a part of local stack directory.

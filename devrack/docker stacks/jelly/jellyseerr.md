@@ -154,9 +154,9 @@ This view depends on the user currently logged in, instructions are written unde
 
 </details>
 
-### Emby
+### Jellyfin
 
-See [above](#initial-setup-connect-to-jellyfin) additional Emby Settings.
+See [above](#initial-setup-connect-to-jellyfin) additional Jellyfin Settings.
 
 - "Internal URL" : `<subdomain.domain.tld>` (External JellyFin URL)
 - "External URL" : `<subdomain.domain.tld>` (External JellyFin URL)
@@ -165,19 +165,38 @@ See [above](#initial-setup-connect-to-jellyfin) additional Emby Settings.
 
 See [above](#initial-setup-services)
 
+### Network
+
+- [X] Enable Proxy Support
+- [X] Enable CSRF Protection
+- [ ] HTTP(S) Proxy
+
+Advanced Network Settings
+
+- [X] Force IPv4 Resolution First
+
 ### Notifications
 
-- "Enable Agent" : Checked
-- "Required user email" : Unchecked
-  - This is disabled due to signin being managed by JellyFin and in-turn Authentik
-- "Sender Name" : Name as you please.
-- "Sender Address" : Enter email address
-- "SMTP Host" : `smtp.gmail.com`
-- "SMTP Port" : 587
-- "Encryption Method" : Use STARTTLS if available
-- "Allow Self-Signed Certificates" : Unchecked
-- "SMTP Username" : Your email
-- "SMTP Password" : [SMTP Password](./unraid#creating-gmail-smtp-relay)
+Select Discord
+
+- [X] Enable Agent
+- Webhook URL: `https://discord.com/api/webhooks...`
+- Bot Username: Jellyseerr
+- Bot Avatar URL: jellyseerr-logo
+- Notification Role ID: User "User" role ID to notify.
+- [ ] Enable Mentions
+- [X] Request Pending Approval
+- [ ] Request Automatically Approved
+- [X] Request Approved
+- [ ] Request Denied
+- [X] Request Available
+- [X] Request Processing Failed
+- [X] Issue Reported
+- [ ] Issue Comment
+- [X] Issue Resolved
+- [ ] Issue Reopened
+
+Select "Test" to verify Webhook is working; Select "Save Changes".
 
 ### Jobs & Cache
 
