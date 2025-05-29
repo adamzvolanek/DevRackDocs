@@ -4,7 +4,14 @@ Reference TRaSH Guide's for [Radarr](https://trash-guides.info/Radarr/) for addi
 
 ## Setup
 
-Follow these steps if a config file is not provided.
+Follow these steps if a config file is not provided. If various settings do not appear, be sure to select the "Show Advanced" cog wheel at the top.
+
+### Settings --> Media Management
+
+Under the Folders section,
+
+- [X] Create empty movie folders.
+- [X] Delete Empty Folders.
 
 ### Settings --> Custom Formats
 
