@@ -46,6 +46,19 @@ Select Public to teh following Asset Permissions.
 
 Currently not setup. [Setup Link](https://docs.goauthentik.io/integrations/services/bookstack/)
 
+## Webhooks
+
+- [X] Webhook Active
+- Webhook Name: `Alexandria Discord`
+- Webhook Endpoint: https://discord.com/api/webhooks/...
+- Webhook Request Timeout (Seconds): `5`
+- Webhook Events
+  - [X] page_create
+  - [X] page_update
+  - [X] chapter_update
+  - [X] book_update
+- Save Webhook.
+
 ## BookStack Hierarchy
 
 Proposed structure of Alexandria BookStack:

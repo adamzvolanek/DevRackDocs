@@ -4,7 +4,14 @@ Reference TRaSH Guide's for [Sonarr](https://trash-guides.info/Sonarr/) for addi
 
 ## Setup
 
-Follow these steps if a config file is not provided.
+Follow these steps if a config file is not provided. If various settings do not appear, be sure to select the "Show Advanced" cog wheel at the top.
+
+### Settings --> Media Management
+
+Under the Folders section,
+
+- [X] Create empty movie folders.
+- [X] Delete Empty Folders.
 
 ### Settings --> Custom Formats
 
@@ -129,6 +136,30 @@ Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 ### Series --> Library Import
 
 Select the 'Start Import' button, select the `media\tv` directory, and press Ok. Allow time for the tv shows to be imported and managed.
+
+### Notifications
+
+Navigate to Sonarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Grab
+  - [ ] On File Import
+  - [X] On File Upgrade
+  - [X] On Import Complete
+  - [ ] On Rename
+  - [X] On Series Add
+  - [X] On Series Delete
+  - [X] On Episode File Delete
+  - [X] On Episode File Delete For Upgrade
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+  - [ ] On Manual Interaction Required
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Sonarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/sonarr.webp`
 
 ## Automated
 
