@@ -8,7 +8,14 @@ Follow these steps if a config file is not provided. If various settings do not 
 
 ### Settings
 
-Likewise, these settings may already be set by default.
+These settings may already be set by default.
+
+### Settings --> Media Management
+
+Under the Folders section,
+
+- [X] Create empty movie folders.
+- [X] Delete Empty Folders.
 
 #### Quality Profiles
 
@@ -177,6 +184,30 @@ An option to explore, to share meta-data between the *arr family of dockers and 
 
 Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
-###  Movies --> Library Import
+### Movies --> Library Import
+
+Select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.
+
+### Notifications
+
+Navigate to Radarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Grab
+  - [ ] On File Import
+  - [ ] On Rename
+  - [X] On Series Add
+  - [X] On Series Delete
+  - [X] On Episode File Delete
+  - [X] On Episode File Delete For Upgrade
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+  - [ ] On Manual Interaction Required
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Radarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/radarr.webp`
 
 If you already have media, select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.
