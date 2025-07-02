@@ -6,24 +6,16 @@ Reference TRaSH Guide's for [Radarr](https://trash-guides.info/Radarr/) for addi
 
 Follow these steps if a config file is not provided. If various settings do not appear, be sure to select the "Show Advanced" cog wheel at the top.
 
+### Settings
+
+These settings may already be set by default.
+
 ### Settings --> Media Management
 
 Under the Folders section,
 
 - [X] Create empty movie folders.
 - [X] Delete Empty Folders.
-
-### Settings --> Custom Formats
-
-Select the plus symbol and name it 'HEVC'. Select the plus symbol for "Conditions" and select "Presets" under 'Release Title' and select 'x265'.
-
-Ensure "Required" is checked.
-
-Select the plus symbol again under "Conditions" and name it "x265" with the regular expression of `x265`.
-
-Repeat for creating a `x264` Custom format.
-
-### Settings --> Profiles
 
 #### Quality Profiles
 
@@ -121,7 +113,17 @@ Give HEVC a score of +10, x264 a score of +5, and select 'Save'.
 
 Delete any remaining quality profiles.
 
-### Settings --> Download Clients
+#### Custom Formats
+
+Select the plus symbol and name it 'HEVC'. Select the plus symbol for "Conditions" and select "Presets" under 'Release Title' and select 'x265'.
+
+Ensure "Required" is checked.
+
+Select the plus symbol again under "Conditions" and name it "x265" with the regular expression of `x265`.
+
+Repeat for creating a `x264` Custom format.
+
+#### Download Clients
 
 Select 'qBittorrent' and name the Download Client. Fill in the remaining fields as follows:
 
@@ -136,7 +138,7 @@ Select 'qBittorrent' and name the Download Client. Fill in the remaining fields 
 - Initial State: Start
 - Remove Completed: Checked (leave as default)
 
-### Settings --> Connections
+#### Connect
 
 **Prerequisite**: Requires API Key from Jellyfin.
 
@@ -148,7 +150,27 @@ Select 'Emby / Jellyfin' and name the Connection. Fill in the fields as follows:
 - Check 'Have MediaBrowser send notifications to configured providers'
 - Check 'Update Library on Import, Rename or Delete?'
 
-### Settings --> Metadata
+Navigate to Radarr Settings, Connect, Plus Symbol, and select Discord.
+
+- Name: `Alexandria Discord`
+- Notification Triggers:
+  - [X] On Grab
+  - [ ] On File Import
+  - [ ] On Rename
+  - [X] On Series Add
+  - [X] On Series Delete
+  - [X] On Episode File Delete
+  - [X] On Episode File Delete For Upgrade
+  - [ ] On Health Issue
+  - [ ] On Health Restored
+  - [ ] On Application Upgrade
+  - [ ] On Manual Interaction Required
+- Tags: Empty
+- Webhook URL: https://discord.com/api/webhooks/...
+- Username: `Radarr`
+- Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/radarr.webp`
+
+#### Metadata
 
 An option to explore, to share meta-data between the *arr family of dockers and JellyFin. Select 'Kodi (XBMC) / Emby Metadata':
 
@@ -158,7 +180,7 @@ An option to explore, to share meta-data between the *arr family of dockers and 
 - Check Movie Images
 - Uncheck 'Radarr will write metadata to movie.nfo...
 
-### Settings --> UI
+#### UI
 
 Modify the 'Time Format' under 'Dates' to 17:00/17:30.
 
@@ -188,8 +210,4 @@ Navigate to Radarr Settings, Connect, Plus Symbol, and select Discord.
 - Username: `Radarr`
 - Avatar: `https://cdn.jsdelivr.net/gh/selfhst/icons/webp/radarr.webp`
 
-## Automated
-
-Configuration file to be generated from 'blank' radarr install and imported during compose or a part of local stack directory.
-
-In-Work: Use of [Recyclarr](./recyclarr) to create default deployable configuration for both sonarr and radarr.
+If you already have media, select the 'Start Import' button, select the `media/movies` directory, and press Okay. Allow time for the movies to be imported and managed.

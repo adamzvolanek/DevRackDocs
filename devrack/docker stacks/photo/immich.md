@@ -56,3 +56,37 @@ Use [Immich-Go](https://github.com/simulot/immich-go).
 ## Automated
 
 Can follow the `immich-config.json` provided in Git.
+
+## Nginx Security
+
+By default, Immich via Cloudflare does not have strong securityheaders.
+
+1. Navigate to Nginx Proxy Manager and select the photos proxy host.
+2. Select the Custom locations tab.
+3. Add a `/` for the location.
+4. Scheme: http
+5. Forward Hostname `immich_server` (or same as your Immich container name if on the same docker network)
+6. Forward Poprt: `2283` (or your Immich container port)
+7. Select the cog wheel to the right of location.
+8. Copy paste the following
+   1. Replace `domain.tld` with respective domain.
+
+      ```bash  
+      # Protect against cross-site scripting and clickjacking attacks
+      add_header X-Frame-Options "SAMEORIGIN" always;
+      add_header X-Content-Type-Options "nosniff" always;
+
+      # Prevent referrer leakage to third parties
+      add_header Referrer-Policy "no-referrer-when-downgrade" always;
+
+      # Control access to browser features
+      add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
+
+      # Content Security Policy (CSP) to prevent XSS and data injection attacks
+      add_header Content-Security-Policy "default-src 'self'; script-src 'self' https://domain.tld https://static.immich.cloud https://tiles.immich.cloud https://www.gstatic.com 'sha256-h5wSYKWbmHcoYTdkHNNguMswVNCphpvwW+uxooXhF/Y=' 'sha256-MK9u9tTzYnMIn9JSYcvLuwDDlo6Oevw1wdQBWB8TGys=' 'sha256-ImdbYtxxSJctaM+Y27orXpk17Gg4h3lK26d71/4eWxQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://domain.tld https://tiles.immich.cloud https://static.immich.cloud https://www.gstatic.com; frame-ancestors 'self'; worker-src 'self' blob:;" always;
+
+      # Upcoming Headers Configuration
+      add_header Cross-Origin-Embedder-Policy "require-corp" always;
+      add_header Cross-Origin-Opener-Policy "same-origin" always;
+      add_header Cross-Origin-Resource-Policy "same-origin" always;
+      ```
