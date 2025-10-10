@@ -59,7 +59,7 @@ Can follow the `immich-config.json` provided in Git.
 
 ## Nginx Security
 
-By default, Immich via Cloudflare does not have strong securityheaders.
+By default, Immich via Cloudflare does not have strong security headers. For additional context see [this](https://github.com/immich-app/immich/discussions/13043) GitHub thread.
 
 1. Navigate to Nginx Proxy Manager and select the photos proxy host.
 2. Select the Custom locations tab.
@@ -82,8 +82,8 @@ By default, Immich via Cloudflare does not have strong securityheaders.
       # Control access to browser features
       add_header Permissions-Policy "geolocation=(), microphone=(), camera=()" always;
 
-      # Content Security Policy (CSP) to prevent XSS and data injection attacks
-      add_header Content-Security-Policy "default-src 'self'; script-src 'self' https://domain.tld https://static.immich.cloud https://tiles.immich.cloud https://www.gstatic.com 'sha256-h5wSYKWbmHcoYTdkHNNguMswVNCphpvwW+uxooXhF/Y=' 'sha256-MK9u9tTzYnMIn9JSYcvLuwDDlo6Oevw1wdQBWB8TGys=' 'sha256-ImdbYtxxSJctaM+Y27orXpk17Gg4h3lK26d71/4eWxQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://domain.tld https://tiles.immich.cloud https://static.immich.cloud https://www.gstatic.com; frame-ancestors 'self'; worker-src 'self' blob:;" always;
+      ## Self + Trusted Domains Only (no hashes)
+      add_header Content-Security-Policy "default-src 'self'; script-src 'self' https://subdomain.domain.tld https://static.immich.cloud https://tiles.immich.cloud https://www.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://subdomain.domain.tld https://tiles.immich.cloud https://static.immich.cloud https://www.gstatic.com; frame-ancestors 'self'; worker-src 'self' blob:; " always;
 
       # Upcoming Headers Configuration
       add_header Cross-Origin-Embedder-Policy "require-corp" always;
