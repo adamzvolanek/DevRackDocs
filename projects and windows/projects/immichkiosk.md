@@ -48,7 +48,7 @@ Immich Kiosk Version 2
 2. Select **New API Key**
    1. Name the API Key. e.g. `Acer15Mom`
       1. `<DisplayType><Size><UsersName>`
-   2. Under Permission, check **album.read**.
+   2. Under Permission, check **album.read** and **asset.view**.
    3. Select **Create**.
    4. Take note of the API Key.
    5. For instructions using Hoppscotch to generate API Key, see bottom of page prior to photos.
