@@ -45,6 +45,7 @@ Immich Kiosk Version 2
 ### Immich Setup
 
 1. Create Immich Kiosk User
+   1. You can leverage the same Immich Kiosk User and setup shared albums with the user.
 2. Select **New API Key**
    1. Name the API Key. e.g. `Acer15Mom`
       1. `<DisplayType><Size><UsersName>`
