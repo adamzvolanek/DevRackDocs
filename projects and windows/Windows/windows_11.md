@@ -96,7 +96,7 @@ Set Network & internet setting to "Private network". Download and setup your Sec
   - [ ] Let apps show me personalized ads by using my advertising ID
   - [ ] Let websites show me locally relevant content by accessing my language list
   - [ ] Let Windows improve Start and search results by tracking app launches
-  - [ ] SHow my suggested content in the Settings app
+  - [ ] Show my suggested content in the Settings app
 
 ### Settings / Windows Update
 
