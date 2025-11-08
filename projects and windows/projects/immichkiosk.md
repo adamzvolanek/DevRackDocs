@@ -2,7 +2,23 @@
 
 Overall a success apart from the lack of a touchscreen and an extra cable purchased that I didn't need. If I was to do it again, I would either purchase a larger PI or smaller/compatible display for the Pi Zero 2 W.
 
+Instructions updated with Immich release v2.X.X!
+
 ### Purchases List and Notes
+
+Immich Kiosk Version 2
+
+- 15.6 inch 1920x1080 display [Amazon Link](https://www.amazon.com/dp/B0CN771QHZ)
+- Raspberry Pi Zero 2 W
+  - [Raspberry PI Zero 2 W Heatsink](https://www.amazon.com/dp/B09VFHJF85)
+  - [MicroSD Card](https://www.amazon.com/dp/B07P3D6Y5B)
+- [Micro USB to C](https://www.amazon.com/dp/B0744BKDRD) for power from display.
+- [Mini HDMI Cable](https://www.amazon.com/dp/B0FDB9WCYZ)
+- USB-C Power Brick to power display and PI.
+
+</details>
+
+<details><summary>Immich Kiosk Version 1</summary>
 
 - Raspberry Pi Zero 2 W
 - 10.1 inch 1280x800 display [Amazon Link](https://www.amazon.com/dp/B0BPM9VTY6)
@@ -17,41 +33,26 @@ Overall a success apart from the lack of a touchscreen and an extra cable purcha
   - Powers both display and Pi Zero 2.
 - [Micro USB to USB](https://www.amazon.com/YOKIVE-Switch-Extension-Reduced-6-56-Feet/dp/B0BGSKFLS5) or something similar to power Raspberry PI.
 
+</details>
+
+***
+
 ### Downloads
 
 1. Download [DietPi](https://dietpi.com/#download).
 2. Download [etcher](https://etcher.balena.io/).
-3. Download [Hoppscotch](https://hoppscotch.io/)
 
 ### Immich Setup
 
-Implementation for each user can vary!
-
 1. Create Immich Kiosk User
-2. Create Immich Kiosk User API-Key via WebUI named `Get Read Only Key`.
-3. Generate Read-Only API key using Hoppscotch
-   1. Post: https://immich.url/api/api-keys
-   2. Authorization Tab
-      1. Key: X-API-Key
-      2. Value: `your_api_key`
-   3. Body Tab
-      1. JSON below:
+2. Select **New API Key**
+   1. Name the API Key. e.g. `PictureFrame#`
+   2. Under Permission, check **album.read** and **asset.view**.
+   3. Select **Create**.
+   4. Take note of the API Key.
+   5. For instructions using Hoppscotch to generate API Key, see bottom of page prior to photos.
 
-             {
-                "name": "Read-Only Key",
-                "permissions": [
-                "album.read"
-                ]
-             }
-   4. Copy the `secret` returned, this will become our `immich_api_key` populated in the `config.yaml`.
-4. Verify this works by running a GET in Hoppscotch
-   1. Authorization Tab
-      1. Key: X-API-Key
-      2. Value: `immich_api_key`
-   2. Response should return with a 200 status.
-5. Delete the `Get Read Only Key` from the Immich WebUI.
-
-For each ImmichKiosk Picture Frame.
+For **each** ImmichKiosk Picture Frame.
 
 1. Have user create an Album, populate with pictures.
 2. Have user share Album with the Immich Kiosk User.
@@ -60,7 +61,7 @@ For each ImmichKiosk Picture Frame.
 
 ### Steps for Windows
 
-1. Extract DietPi OS whence downloaded.
+1. Locate DietPi OS once downloaded.
 2. Flash DietPi to microSD card via Etcher.
 3. Re-mount the microSD card and edit `dietpi-wifi.txt`.
    1. In dietpi-wifi.txt enter WIFI_SSID and WIFI_KEY. e.g.
@@ -69,8 +70,9 @@ For each ImmichKiosk Picture Frame.
 4. Replace the `dietpi.txt` with the following file: [dietpi.txt](https://github.com/adamzvolanek/DevRack/blob/main/immich-kiosk-project/dietpi.txt)
 5. Boot
    1. Monitor assigned IP via DHCP
-   2. Chromium RAM warning expected.
-6. Login as dietpi to PI via SSH.
+   2. Chromium RAM warning expected on first boot.
+      1. This will go away once the `Automation_Custom_Script` is run.
+6. Login as **dietpi** to PI via SSH.
 7. Type, `cd /home/dietpi/` to change directories to dietpi's home.
 8. Type, `touch setup_script.sh` to create the setup script file.
 9. Type, `nano setup_script.sh` to open and edit the setup script file.
@@ -84,7 +86,7 @@ For each ImmichKiosk Picture Frame.
 
 ### Steps for Linux
 
-These are **untested**!
+These steps are **untested**!
 
 1. Extract DietPi OS whence downloaded.
 2. Flash DietPi to microSD card via Etcher.
