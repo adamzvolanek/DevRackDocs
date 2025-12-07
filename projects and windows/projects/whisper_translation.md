@@ -75,4 +75,4 @@ This will generate an `.srt` subtitle file inside a folder named **subtitles** r
 
 ### Scripted
 
-Location Pending.
+Script to run Whipser [here](https://github.com/adamzvolanek/DevRack/tree/main/projects/whisper).
