@@ -15,7 +15,7 @@ Prerequisites:
 
 1. Login to FileBrowser Quantum docker container as admin and enter the default admin credentials defined in the `config/config.yaml` file: admin123!.
 2. Upon login, select Okay on the prompt.
-3. Select the admin's cog wheel at the top left and click **Access Management**.
+3. Select the admin's cog wheel (Settings For User) at the top left and click **Access Management**.
    1. Click **New** and click the Deny drop-down and select **Allow**.
    2. Enter "admin" into the field.
    3. Click the **+** symbol.
@@ -30,3 +30,18 @@ Prerequisites:
    3. Click **Save**
 6. Click "Notifications"
    1. Clear all notifications.
+
+### Creating an account
+
+1. Select the admin's cog wheel at the top left and click **Access Management**.
+2. Select **User Management**
+   1. Click **New**
+      1. Enter a username.
+      2. Enter a password twice.
+      3. Enter "allowed sources and user scope..." and the subfolder as it related to the *user*.
+      4. Review the permissions for the *user*.
+3. Select **Access Management**
+   1. Click **New** and click the Deny drop-down and select **Allow**.
+   2. Enter the *username* into the field.
+   3. Toggle **Recursive Delete**
+   4. Click the **+** symbol.
