@@ -9,16 +9,20 @@ Prerequisites:
 - A `config.yaml` file.
   - See [config.yaml](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud/filebrowser-quantum/config.yaml)
 - Create the config directory per [line 19](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/cloud/filebrowser/filebrowser.yaml#L19)
-- Create and paste the `config.yaml` file into the filebrowser-quantum/config directory.
-- Create and modify the permissions of the filebrowser-quantum/data and filebrowser-quantum/tmp directories to 755 with uid:gid of 1000.
+
+### Setup of FileBrowser Quantum Environment
+
+1. Create the filebrowser-quantum/config directory in appdata. `mkdir -p /mnt/user/appdata/filebrowser-quantum/config`.
+2. Create and paste the `config.yaml` file into the filebrowser-quantum/config directory.
+   1. Update the admin username and password.
+3. Create and modify the permissions of the filebrowser-quantum/data and filebrowser-quantum/tmp directories to 755 with uid:gid of 1000.
 
 ### Initial Setup of FileBrowser
 
-1. Login to FileBrowser Quantum docker container and enter the default admin credentials defined in the `config/config.yaml` file: admin123!.
-   1. **Remember to change the admin password after instance creation**
+1. Login to FileBrowser Quantum docker container and enter the configured *administrator user* credentials defined in the `config/config.yaml` file.
 2. Upon login, select 'Login to Alexandria' on the prompt.
 3. Select **Acknowledge** on the "Welcome to FileBrowwer Quantum" popup that describes a new database was created on startup...
-4. Select the admin's cog wheel (Settings For User) at the top left and click **Access Management**.
+4. Select the admin users cog wheel (Settings For User) at the top left and click **Access Management**.
    1. Click **New** at the bottom right and click the Deny drop-down and select **Allow**.
    2. Enter "admin" into the field.
    3. Click the **+** symbol.
@@ -45,7 +49,7 @@ Prerequisites:
    1. Click **New** at the bottom right.
       1. Enter a username.
       2. Enter a password twice.
-      3. Under "Defined allowed sources and user scope within them", ensure "Alexandria Cloud" is selected and select the users directory in `/`.
+      3. Under "Defined allowed sources and user scope within them", ensure "Alexandria Cloud" is selected and select the users directory instead of `/`.
       4. Review the permissions for the *user*.
       5. Select "Save".
       6. Enter *admin password* and click **Confirm**.
