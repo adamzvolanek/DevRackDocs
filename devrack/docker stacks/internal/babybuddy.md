@@ -10,10 +10,12 @@ The most up to date docs can be references at [docs.baby-buddy.net](https://docs
 2. Select the admin at the top-right and "Password" under the User field.
    1. Enter the default admin credentials in the Old password field.
    2. Enter a new password and new password confirmation.
+   3. Select "Submit"
 3. Navigate to "Settings" under the User field.
    1. Enter the administrator first name.
    2. Enter the administrator email address.
    3. Select proper Timezone.
+   4. Select "Submit"
 
 ### Setup of Site Settings
 
