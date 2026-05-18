@@ -2,6 +2,8 @@ This page covers the setup of [Baby Buddy](https://github.com/babybuddy/babybudd
 
 ## Setup
 
+The most up to date docs can be references at [docs.baby-buddy.net](https://docs.baby-buddy.net/user-guide/getting-started/).
+
 ### Setup of Admin Account
 
 1. Enter default admin credentials, `admin` `admin`.
