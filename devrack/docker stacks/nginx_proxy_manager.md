@@ -13,7 +13,7 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
   - Select http/https scheme based on port of docker.
   - Provide `container_name` as Forward Hostname / IP.
   - Provide the bolded value as the Forward Port, "${SERVER_IP}:**<Server_Port>**:<Docker_Port>".
-  - [X] Cache Assets
+  - [ ] Cache Assets
   - [X] Websockets Support
   - [X] Block Common Exploits
 - SSL (Tab)
@@ -27,3 +27,24 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
 
 - [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
 - [CloudFlare](https://youtu.be/GarMdDTAZJo?si=I0haNsb_SYiNbOE5)
+
+## Custom Nginx Configuration for Stacks
+
+### BookStack
+
+```
+# By default indexes are disabled on Nginx but if you have them enabled
+# add this to your BookStack server block
+location /uploads {
+       autoindex off;
+}
+```
+
+### Jellyfin
+
+```
+proxy_buffering off;
+proxy_request_buffering off;
+proxy_max_temp_file_size 0;
+client_max_body_size 20M;
+```
