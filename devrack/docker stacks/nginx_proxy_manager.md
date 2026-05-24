@@ -28,6 +28,19 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
 - [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
 - [CloudFlare](https://youtu.be/GarMdDTAZJo?si=I0haNsb_SYiNbOE5)
 
+### Redirection Hosts
+
+1. Select "Add Redirection Host"
+2. Enter desired domain names.
+   1. e.g. *.domain.tld, domain.tld
+3. Select https scheme
+4. Enter Forward Domain.
+5. Select 307 Temporary redirect.
+6. Options:
+   1. Toggle On, Preserve Path
+   2. Toggle On, Block Common Exploits
+7. Follow general setup instructions above.
+
 ## Custom Nginx Configuration for Stacks
 
 ### BookStack
