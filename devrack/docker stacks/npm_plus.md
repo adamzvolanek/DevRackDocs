@@ -108,31 +108,4 @@ labels:
 
 #### Whitelist IPs
 
-1. Navigate to `opt\crowdsec\conf\parsers\s02-enrich`
-2. Create `cloudflare-whistelist.yaml` and populate with the following content
-3. IPs below should match cloudflares: https://www.cloudflare.com/ips-v4/#
-
-   ```yaml
-   name: CloudFlare
-   description: "Cloudflare Hosted IPs"
-   whitelist:
-   reason: "CloudFlare"
-   cidr:
-      - "173.245.48.0/20"
-      - "103.21.244.0/22"
-      - "103.22.200.0/22"
-      - "103.31.4.0/22"
-      - "141.101.64.0/18"
-      - "108.162.192.0/18"
-      - "190.93.240.0/20"
-      - "188.114.96.0/20"
-      - "197.234.240.0/22"
-      - "198.41.128.0/17"
-      - "162.158.0.0/15"
-      - "104.16.0.0/13"
-      - "104.24.0.0/14"
-      - "172.64.0.0/13"
-      - "131.0.72.0/22"
-   ```
-
-4. Restart Crowdsec or the entire npmplus stack.
+1. Verify cdn-whitelist.yaml is listed when typing `docker exec crowdsec cscli postoverflows list` in server.
