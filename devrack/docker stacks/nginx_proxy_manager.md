@@ -6,6 +6,13 @@ Follow these steps to setup Nginx Proxy Manager.
 
 ### General Setup Instructions
 
+### Certificate Installation
+
+- [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
+- [CloudFlare](https://youtu.be/GarMdDTAZJo?si=I0haNsb_SYiNbOE5)
+
+### Hosts
+
 Most nginx proxy's will follow these general setup procedures. Upon login, select "Add Proxy Host".
 
 - Details (Tab)
@@ -23,16 +30,12 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
   - [X] HTTP/2 Support
   - [X] HSTS Subdomains
 
-### Certificate Installation
-
-- [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
-- [CloudFlare](https://youtu.be/GarMdDTAZJo?si=I0haNsb_SYiNbOE5)
-
 ### Redirection Hosts
 
 1. Select "Add Redirection Host"
 2. Enter desired domain names.
    1. e.g. *.domain.tld, domain.tld
+      1. Press the Enter key between entries.
 3. Select https scheme
 4. Enter Forward Domain.
 5. Select 307 Temporary redirect.
