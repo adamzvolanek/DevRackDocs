@@ -1,13 +1,13 @@
 This page covers the configuration of [NPM Plus](https://github.com/ZoeyVid/NPMplus#) on DevRack.
 
-## NPM Setup
+# NPM Setup
 
 Follow these steps to setup Nginx Proxy Manager Plus.
 
 1. Navigate to the (host) IP of the server on port 81.
 2. Enter name for (Admin) user, Email address, and Password.
 
-### Certificate Installation
+## Certificate Installation
 
 - [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
 - [CloudFlare](https://www.youtube.com/watch?v=pwK1LnbTitI)
@@ -22,7 +22,7 @@ Follow these steps to setup Nginx Proxy Manager Plus.
      5. Copy the first pem into Notepad++ and save as **domain.pem**.
      6. Copy the certificate key into Notepad++ and save as **domain.key**
 
-#### Within NPM Plus
+### Within NPM Plus
 
 1. Click the **Certificates** button
 2. Click **Add Certificate** and a drop-down appears.
@@ -31,7 +31,7 @@ Follow these steps to setup Nginx Proxy Manager Plus.
    2. For the "Certificate", select the `domain.pem` file saved from above.
    3. For the "Certificate Key" file select the `domain.key` file saved from above.
 
-### Redirection Hosts
+## Redirection Hosts
 
 1. Select "Add Redirection Host"
 2. Enter desired domain names.
@@ -46,7 +46,7 @@ Follow these steps to setup Nginx Proxy Manager Plus.
    1. Select certificate created above.
    2. Enable all options except for "Make mTLS Optional".
 
-### Hosts
+## Hosts
 
 1. Navigate to **Hosts**.
 2. Enter domain name in the "Domain Names" field.
@@ -62,7 +62,7 @@ Follow these steps to setup Nginx Proxy Manager Plus.
    1. Select the TLS Certificate created above.
    2. Enable all options: Force HTTPS, HTTP/3 Support, HSTS Enabled (2 Years), and HSTS Subdomains+Preload.
 
-## CrowdSec Setup
+# CrowdSec Setup
 
 Steps from NPMPlus CrowdSec section [link](https://github.com/ZoeyVid/NPMplus/blob/develop/README.md#crowdsec).
 
@@ -94,7 +94,7 @@ labels:
 7. Redeploy the `compose.yaml`
 8. Note that when using crowdsec requests will always be buffered, so setting `proxy_(request_)buffering` to off will not work
 
-### Crowdsec Specifics
+## Crowdsec Specifics
 
 1. Navigate to `opt/crowdsec/conf` and open **config.yaml**.
    1. Add Server or LAN subnet into the trusted IP field.
@@ -106,6 +106,6 @@ labels:
 6. Perform the tests listed in: https://docs.crowdsec.net/u/getting_started/health_check
    1. Note, when running HTTP detection test and AppSec detection test, use URLs listed in the hosts in NPMPlus.
 
-#### Whitelist IPs
+### Whitelist IPs
 
 1. Verify cdn-whitelist.yaml is listed when typing `docker exec crowdsec cscli postoverflows list` in server.

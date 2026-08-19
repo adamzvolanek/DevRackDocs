@@ -1,17 +1,17 @@
 This page covers the configuration of [Nginx Proxy Manager](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/core/npm.yaml) on DevRack.
 
-## Setup
+# Setup
 
 Follow these steps to setup Nginx Proxy Manager.
 
-### General Setup Instructions
+## General Setup Instructions
 
-### Certificate Installation
+## Certificate Installation
 
 - [DuckDNS](https://youtu.be/qlcVx-k-02E?si=dRPaGsstvUQSuSkd)
 - [CloudFlare](https://youtu.be/GarMdDTAZJo?si=I0haNsb_SYiNbOE5)
 
-### Hosts
+## Hosts
 
 Most nginx proxy's will follow these general setup procedures. Upon login, select "Add Proxy Host".
 
@@ -30,7 +30,7 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
   - [X] HTTP/2 Support
   - [X] HSTS Subdomains
 
-### Redirection Hosts
+## Redirection Hosts
 
 1. Select "Add Redirection Host"
 2. Enter desired domain names.
@@ -44,9 +44,9 @@ Most nginx proxy's will follow these general setup procedures. Upon login, selec
    2. Toggle On, Block Common Exploits
 7. Follow general setup instructions above.
 
-## Custom Nginx Configuration for Stacks
+# Custom Nginx Configuration for Stacks
 
-### BookStack
+## BookStack
 
 ```
 # By default indexes are disabled on Nginx but if you have them enabled
@@ -56,7 +56,7 @@ location /uploads {
 }
 ```
 
-### Jellyfin
+## Jellyfin
 
 ```
 proxy_buffering off;

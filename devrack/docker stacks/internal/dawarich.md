@@ -2,21 +2,21 @@ This page covers the setup of [Dawarich](https://github.com/Freika/dawarich) to 
 
 Default login reminder: `demo@dawarich.app` and `password`.
 
-## Setup
+# Setup
 
-### Account
+## Account
 
 Select your the `demo@dawarich.app` at the top-right and select 'Account'. Update your Email and Password.
 
-### Settings
+## Settings
 
 Configure integration with Immich for additional location services. Generate Immich API key for your account.
 
-### Users
+## Users
 
 Generate new users as needed populating the email and password fields.
 
-### Import
+## Import
 
 Take an export from your phone's photo location (JSON) following these instructions:
 

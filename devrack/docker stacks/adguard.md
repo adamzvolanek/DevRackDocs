@@ -1,6 +1,6 @@
 This page covers the setup of [AdGuard](https://github.com/AdguardTeam/AdGuardHome/wiki/Docker) to deploy in [my](https://github.com/adamzvolanek/DevRack/blob/main/docker-compose/core/adguard.yaml) docker-compose stack(s).
 
-## Setup
+# Setup
 
 Navigate to <ADGUARD_IP>:3000 to view the install page. Select "Get Started".
 
@@ -10,7 +10,7 @@ Configure your credentials for AdGuard.
 
 Configure your router to point to the <ADGUARD_IP> as provided by Step 4/5. Once complete, select "Open Dashboard".
 
-### Settings/General Settings
+## Settings/General Settings
 
 Navigate to "Settings/General settings" (`http://<server_ip>/#settings`). These settings can be edited per your desired configuration, however current settings include:
 
@@ -37,7 +37,7 @@ Within **Statics configuration**
 
 Click "Save" at the bottom of the page.
 
-### Settings/DNS Settings
+## Settings/DNS Settings
 
 Replace the default "Upstream DNS Server" (`https://dns10.quad9.net/dns-query`) with your desired configuration. My current involves:
 
@@ -52,15 +52,15 @@ Select your preferred method of querying out DNS requests: "Load-balancing", "Pa
 
 The remainder of the settings are set to default, press "Apply" and "Test upstreams" to verify the changes take.
 
-### Settings/Client Settings
+## Settings/Client Settings
 
 Populate the "Persistent clients" table with known devices and their IP addresses associating appropriate tags to each. This helps in identifying traffic on the AdGuard homepage.
 
-### Settings/DHCP Settings
+## Settings/DHCP Settings
 
 Disable DHCP by selecting "Disable DHCP Server".
 
-### Filters/DNS blocklists
+## Filters/DNS blocklists
 
 Enable the "AdAway Default Blocklist" by selecting the checkbox.
 
@@ -87,7 +87,7 @@ Additional (and total list of) filters applied to AdGuard and are enabled. Click
 
 Many of the listed filters above can be found [here](https://firebog.net/).
 
-### Filters/Custom filtering rules
+## Filters/Custom filtering rules
 
 Currently have the following custom filtering rules in place after some usability issues with various services, sites, apps.
 
@@ -98,7 +98,3 @@ Currently have the following custom filtering rules in place after some usabilit
 @@||links.h6.hilton.com^$important
 @@||alb.reddit.com^$important
 ```
-
-## Automated Steps
-
-placeholder text

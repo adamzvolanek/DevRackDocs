@@ -1,8 +1,8 @@
 This page covers the setup of [paperless-ngx](https://docs.paperless-ngx.com/).
 
-## Setup
+# Setup
 
-### Administration
+## Administration
 
 Login and navigate to the Settings at the bottom-left.
 
@@ -10,14 +10,10 @@ Login and navigate to the Settings at the bottom-left.
 - [ ] Invert thumbnails in dark mode.
 - Select "Save" at the bottom.
 
-### Configuration
+## Configuration
 
 OCR Settings Tab
 
 These should be covered by the environment variables.
 
 - Output Type: pdfa
-
-## Automated
-
-Put in as many environment variables to reduce manual setup.

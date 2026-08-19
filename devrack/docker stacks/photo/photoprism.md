@@ -2,26 +2,22 @@ This page covers the setup of Photoprism to deploy in my docker-compose stack(s)
 
 [Photoprism Site](https://www.photoprism.app/)
 
-## Picture Share
+# Picture Share
 
 Created a separate directory for "professional" photos. Images there are organized by Year and location. An Event folder is added if multiple photo "moments" occur at identical locations.
 
-## Automated
-
-Pending.
-
-## Setup
+# Setup
 
 These steps are a one-time setup and does require update of the docker environment variables after completion.
 
-### Library Import
+## Library Import
 
 - Navigate to Library then select the "Index" tab.
   - Select "All Originals" and select "Start". This begins importing files from your additional media folders.
 
 Once Photoprism is in 'public' mode, the following script will be needed to trigger a library scan for new image imports. More information in the [public ready](#public-ready) section.
 
-### Settings
+## Settings
 
 - Navigate to "Settings" and select the "Library" tab.
   - [X] Estimates
@@ -50,7 +46,7 @@ Once Photoprism is in 'public' mode, the following script will be needed to trig
   - [ ] Account
   - [X] Places
 
-### Public Ready
+## Public Ready
 
 Once ready for public viewing, modify the `PUBLIC_READY` environment variable in the [photoprism docker environment file](https://github.com/adamzvolanek/DevRack/tree/main/docker-compose/photo/) from false to true.
 
@@ -58,6 +54,6 @@ Manual trigger for library update: `/usr/bin/docker exec -it <name_of_photo_pris
 
 This script should also be added to Unraid's User Scripts configuration as a cron job.
 
-#### Editing `settings.yaml`
+### Editing `settings.yaml`
 
 Edit the settings file and set albums to false, disabling the album feature.
