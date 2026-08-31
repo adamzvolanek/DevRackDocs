@@ -23,6 +23,10 @@ In the adminstration tab, navigate to the dashboard. Select the green Apply butt
 
 Skipping for future implementation.
 
+#### Navigation
+
+Select 'Custom Navigation' and begin generating a navigation tree.
+
 #### Theme
 
 Enable Dark Mode.

@@ -16,6 +16,7 @@ I have not had a persistent and reliable portfolio for others to view, currently
 - Sony 18-135mm f/3.5-5.6
 - Sigma 56mm f/1.4
 - Sony 70-350mm f/4.3-6.3
+- Sony 15mm f/1.4
 
 ## Motorcycle
 
