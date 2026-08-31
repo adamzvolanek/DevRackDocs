@@ -1,49 +1,61 @@
 While many tools exist for documenting softare, tooling, etc. I am test running WikiJS however [BookStack](https://www.bookstackapp.com/) is a strong contender, I am using WikiJS going forward due to GitHub integration.
 
-## Prerequisite
+## Admin Configuration
 
-This WikiJS instance is deployed using [Docker Desktop](https://www.docker.com/products/docker-desktop/) on my Windows PC. Remember to enable virtulization in your computers BIOS.
-
-## Docker-Compose
-
-You can view the docker-compose file on Git [here](https://adamzvolanek.github.io/alexandria_splash_page/)
-
-### Admin Configuration
-
-- Access WikiJS via localhost or port as needed.
+- Access WikiJS via server IP and port defined in docker compose.
 - Enter desired administration email address
 - Generate strong password for adminstrator
 - Enter desired domain (this can be changed later)
 
-### Email Configuration
+### WikiJS Configuration
+
+In the adminstration tab, navigate to the dashboard. Select the green Apply button at the top after each section.
+
+#### General
+
+1. Verify "Site URL" is accurate.
+2. Update "Site Title" accordingly.
+3. Update logo or define a URL.
+4. Under SEO, check "No Index" and "No Follow"
+5. Turn off comments.
+
+#### Locale
+
+Skipping for future implementation.
+
+#### Navigation
+
+Select 'Custom Navigation' and begin generating a navigation tree.
+
+#### Theme
+
+Enable Dark Mode.
+
+#### Git Storage Configuration
+
+1. Check the "Git" Targets
+2. Ensure "Authentication Type" is ssh
+3. Paste in the "Repository URI"
+4. Define "Branch" as `main`.
+5. For "SSH Private Key Mode" to be `path`.
+6. Open terminal and navigate to the servers wikijs volume mount.
+8. Create the .ssh directory in local: `mkdir -p /local/.ssh`
+8. Run `ssh-keygen -t rsa -b 4096`
+  9. Set the path to `/local/.ssh/id_rsa`
+10. Update ssh key in Git as authentication key.
+11. In the WikiJS container, update the git safe directories: `git config --global --add safe.directory /local/repo`
+12. Select Apply in WikiJS configuration.
+
+#### Navigation Setup
+
+- Select 'Site Tree'
+
+#### Email Configuration
 
 - Under System -> Mail, enter the Sender name and Sender Email fields
 - Configure your 'SMTP Settings' as needed. Use a app-seicific password.
 
-### Git Storage Configuration
+#### Security
 
-- Setup/Verify GitHub profile includes SSH Key (Deploy Key)
-  - Generated using these [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
-    - Be sure to name the deploy key to something recognizable to the application.
-- Follow WikiJS instructions [here](https://docs.requarks.io/en/storage/git) and scroll to the "Configure Wiki.js".
-
-### File Structure and Navigation
-
-The repository is setup as a flat file repository to allow for WikiJS to best (in my opinion) display the information.
-
-#### Navigation Setup
-
-- Select Navigation
-- Select 'Static Navigation'
-  - Begin to add in dividers and 'Link's to the structure naming, modifying the icon, and typing their 'Target Type' to a Page.
-
-### Search Engine
-
-Modify to use 'Database - PostgreSQL'.
-
-## Tips
-
-Open the dockers terminal and navigate to `/wiki/data/repo` to locate default location for Git installation.
-
-1. To open terminal in Docker Desktop, select the respective container and click on its name.
-2. Click on the 'Terminal' tab, it should look like this: ![image.png](/image.png){.align-center}
+1. Enable "Enforce HSTS"
+  2. Set HSTS Max Age to one day.

@@ -146,4 +146,4 @@ Select the following:
 
 ## Network Drive Mounting
 
-Script located [here](https://github.com/adamzvolanek/DevRack/blob/main/scripts/windows_11/network_drive_mounts.bat)
+Script located [here](https://github.com/adamzvolanek/DevRack/tree/main/scripts/windows_11)

@@ -1,10 +1,10 @@
 This page covers the setup of [Baby Buddy](https://github.com/babybuddy/babybuddy) to deploy in my docker-compose stack.
 
-## Setup
+# Setup
 
 The most up to date docs can be references at [docs.baby-buddy.net](https://docs.baby-buddy.net/user-guide/getting-started/).
 
-### Setup of Admin Account
+## Setup of Admin Account
 
 1. Enter default admin credentials, `admin` `admin`.
 2. Select the admin at the top-right and "Password" under the User field.
@@ -17,7 +17,7 @@ The most up to date docs can be references at [docs.baby-buddy.net](https://docs
    3. Select proper Timezone.
    4. Select "Submit"
 
-### Setup of Site Settings
+## Setup of Site Settings
 
 1. Define the "default minimum nap start time" and "Default maximum nap start time".
    1. Select Submit.

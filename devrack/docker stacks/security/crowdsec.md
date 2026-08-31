@@ -15,7 +15,7 @@ This page covers the setup of [crowdsec](https://www.crowdsec.net/) to deploy in
 - Run `cscli bouncers list` to verify the bouncer is running.
   - Each field should be populated.
 
-## Setup 2
+### Crowdsec Metabase Dashboard
 
 Username: crowdsec@crowdsec.net
 Password: !!Cr0wdS3c_M3t4b4s3??

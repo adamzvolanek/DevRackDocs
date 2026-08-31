@@ -1,8 +1,6 @@
 This page covers the setup of [Home Assistant](https://www.home-assistant.io/) to deploy in my docker-compose stack(s).
 
-# Setup
-
-## Initial Setup of Home Assistant
+## Setup of Home Assistant
 
 Enter username and password as shown.
 

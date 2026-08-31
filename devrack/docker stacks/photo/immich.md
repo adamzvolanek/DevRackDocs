@@ -2,18 +2,18 @@ This page covers the setup of Immich to deploy in my docker-compose stack(s). Th
 
 [Immich Site](https://immich.app/)
 
-## Setup
+# Setup
 
 Follow these steps if a config file is not provided.
 
-### Getting Started
+## Getting Started
 
 - Create Admin Profile
 - Select Theme: Dark
 - Storage Template: On
   - Configure to use "2022/02/IMAGE_56437". Template should be `{{y}}/{{MM}}/{{filename}}`.
 
-### Admin Account Settings
+## Admin Account Settings
 
 - Select the profile icon at the top-right
 - Select "Account Settings"
@@ -43,7 +43,7 @@ Follow these steps if a config file is not provided.
   - [X] Album added
   - [X] Album updated
 
-## Importing Photos
+# Importing Photos
 
 Use [Immich-Go](https://github.com/simulot/immich-go).
 
@@ -53,11 +53,11 @@ Use [Immich-Go](https://github.com/simulot/immich-go).
   - Note the uploading content is *relative*  in the same location. Hence the `.`
   - Alternative: `C:\Users\<PATH>\immich-go_Windows_x86_64\immich-go -server=https://subdomain.adamzvolanek.com -key=<API_KEY> upload C:\path\to\photos`
 
-## Automated
+# Automated
 
 Can follow the `immich-config.json` provided in Git.
 
-## Nginx Security
+# Nginx Security
 
 By default, Immich via Cloudflare does not have strong security headers. For additional context see [this](https://github.com/immich-app/immich/discussions/13043) GitHub thread.
 
