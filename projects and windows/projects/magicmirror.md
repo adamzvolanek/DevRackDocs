@@ -18,14 +18,12 @@ This page covers the setup of MagicMirror (Client) on Raspberry Pi Zero 2 W
     5. Modify `AUTO_SETUP_NET_HOSTNAME` to `MagicMirrorClient`
     6. Modify `AUTO_SETUP_BROWSER_INDEX` to -2
     7. Modify `AUTO_SETUP_AUTOMATED` to 1
-    8. Modify `AUTO_SETUP_INSTALL_SOFTWARE_ID` to 9
-       1. Latest NodeJS
-    9. Add `AUTO_SETUP_INSTALL_SOFTWARE_ID` to 17
-       1. Latest Git
+    8. Modify `AUTO_SETUP_INSTALL_SOFTWARE_ID` to 113
+       1. Latest Chromium
     10. Modify `AUTO_SETUP_AUTOMATED` to 1.
 3. Boot dietpi and login as root
 4. Follow boot prompts
 
 ## MagicMirror Client Installation
 
-1. Follow steps for client only installation [here](https://docs.magicmirror.builders/getting-started/installation.html#manual-installation).
+Pending script creation to open Chromium in Kiosk Configuration.
